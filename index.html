@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zephirin's Bakery | Fresh Bread Baked in Barbados Since 1923</title>
+    <meta name="description" content="Barbados' family bakery since 1923. Sliced sandwich loaves, salt bread, burger buns, coconut bread and pastries, baked fresh and delivered island-wide." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://zephirinsbakery.com/" />
+    <meta name="theme-color" content="#FF5A1F" />
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Zephirin's Bakery" />
+    <meta property="og:locale" content="en_BB" />
+    <meta property="og:title" content="Zephirin's Bakery | Fresh Bread Baked in Barbados Since 1923" />
+    <meta property="og:description" content="Barbados' family bakery since 1923. Sliced sandwich loaves, salt bread, burger buns, coconut bread and pastries, baked fresh and delivered island-wide." />
+    <meta property="og:url" content="https://zephirinsbakery.com/" />
+    <meta property="og:image" content="https://zephirinsbakery.com/images/hero_breakfast_scene.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zephirin's Bakery | Fresh Bread Baked in Barbados Since 1923" />
+    <meta name="twitter:description" content="Barbados' family bakery since 1923. Sliced sandwich loaves, salt bread, burger buns, coconut bread and pastries, baked fresh and delivered island-wide." />
+    <meta name="twitter:image" content="https://zephirinsbakery.com/images/hero_breakfast_scene.jpg" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Bakery", "@id": "https://zephirinsbakery.com/#bakery", "name": "Zephirin's Bakeries Inc", "alternateName": "Zephirin's Bakery", "url": "https://zephirinsbakery.com/", "logo": "https://zephirinsbakery.com/images/zephirin-bakeries-logo.png", "image": "https://zephirinsbakery.com/images/zephirins_factory_exterior.jpg", "description": "Barbadian family bakery baking sliced bread, salt bread, buns, coconut bread and pastries since 1923.", "foundingDate": "1923", "telephone": "+1-246-538-1426", "email": "hello@zephirinsbakery.bb", "address": {"@type": "PostalAddress", "streetAddress": "Tudor Bridge", "addressLocality": "Bridgetown", "addressRegion": "Saint Michael", "addressCountry": "BB"}, "areaServed": "Barbados", "sameAs": ["https://www.instagram.com/zephirinsbakeries/", "https://www.facebook.com/zephirinsbakeries/"]}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Mulish:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <style type="text/tailwindcss">
+      @import "tailwindcss";
+      @theme inline {
+        --color-orange: var(--orange);
+        --color-orange-deep: var(--orange-deep);
+        --color-yellow: var(--yellow);
+        --color-ink: var(--ink);
+        --color-ink-2: var(--ink-2);
+        --color-muted: var(--muted);
+        --color-cream: var(--cream);
+        --color-paper: var(--paper);
+        --font-family-display: var(--font-display);
+        --font-family-body: var(--font-body);
+        --font-family-mono: var(--font-mono);
+      }
+      :root {
+        --orange: #E8410A;
+        --orange-deep: #C93405;
+        --yellow: #D4AF37;
+        --ink: #1C1814;
+        --ink-2: #4E463E;
+        --muted: #8E847A;
+        --cream: #FAF6F0;
+        --paper: #FFFFFF;
+        --font-display: 'Cormorant Garamond', serif;
+        --font-body: 'Mulish', sans-serif;
+        --font-mono: 'IBM Plex Mono', monospace;
+      }
+      body { font-family: var(--font-body); color: var(--ink); background: var(--paper); }
+      .font-mono { font-family: var(--font-mono); }
+      h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); }
+
+      .text-display { font-family: var(--font-display); font-size: clamp(3rem, 2.2rem + 4.8vw, 6.5rem); font-weight: 500; letter-spacing: -0.02em; line-height: 0.92; }
+      .text-hero    { font-family: var(--font-display); font-size: clamp(2.5rem, 1.9rem + 3vw, 4.5rem);   font-weight: 600; letter-spacing: -0.02em; line-height: 0.96; }
+      .text-h2      { font-family: var(--font-display); font-size: clamp(2rem, 1.5rem + 2.5vw, 3.75rem); font-weight: 600; letter-spacing: -0.02em; line-height: 1.05; }
+      .text-h3      { font-family: var(--font-display); font-size: clamp(1.375rem, 1.2rem + 0.9vw, 1.875rem); font-weight: 600; letter-spacing: -0.01em; line-height: 1.2; }
+      .text-lead    { font-family: var(--font-body); font-size: clamp(1.125rem, 1.05rem + 0.4vw, 1.3125rem); font-weight: 300; line-height: 1.6; color: var(--ink-2); }
+      .eyebrow { font-family: var(--font-mono); font-size: 0.8125rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--orange-deep); }
+
+      .eyebrow-rule { display:inline-flex; align-items:center; gap: 0.6rem; }
+      .eyebrow-rule::before { content:""; display:inline-block; width: 28px; height: 2px; background: var(--orange); }
+
+      .btn-primary { background: var(--orange); color: #fff; transition: background .2s ease, transform .2s ease; }
+      .btn-primary:hover { background: var(--orange-deep); transform: translateY(-1px); }
+      .btn-dark { background: var(--ink); color: #fff; transition: opacity .2s ease, transform .2s ease; }
+      .btn-dark:hover { opacity: .85; transform: translateY(-1px); }
+      .btn-outline { border: 1.5px solid #fff; color: #fff; transition: background .2s ease, color .2s ease; }
+      .btn-outline:hover { background: #fff; color: var(--ink); }
+      .btn-outline-dark { border: 1.5px solid var(--ink); color: var(--ink); transition: background .2s ease, color .2s ease; }
+      .btn-outline-dark:hover { background: var(--ink); color: #fff; }
+
+      .sunrise-dot {
+        background: radial-gradient(circle at 32% 30%, var(--yellow) 0%, var(--orange) 55%, var(--orange-deep) 100%);
+      }
+      .card-hover { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+      .card-hover:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -16px rgba(22,18,12,0.18); border-color: var(--orange); }
+
+      /* Hero Slider styles */
+      .slide.active { opacity: 1; z-index: 10; pointer-events: auto; }
+      .slide { pointer-events: none; }
+      .bg-image {
+        transition: transform 10000ms ease-out;
+      }
+      .slide.active .bg-image {
+        transform: scale(1.06);
+      }
+      .slider-dot {
+        background-color: rgba(28, 24, 20, 0.15);
+        border: 1px solid rgba(28, 24, 20, 0.1);
+        transition: all 0.3s ease;
+      }
+      .slider-dot.active-dot {
+        background-color: var(--orange) !important;
+        width: 24px !important;
+        border-radius: 9999px;
+      }
+      @media (min-width: 1024px) {
+        .slider-dot {
+          background-color: rgba(255, 255, 255, 0.4);
+          border: none;
+        }
+        .slider-dot.active-dot {
+          background-color: var(--yellow) !important;
+        }
+      }
+
+      /* Flip Box styling overrides for Safari & browser-native 3D transforms */
+      .flip-card {
+        perspective: 1000px;
+        -webkit-perspective: 1000px;
+      }
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.7s;
+        -webkit-transition: -webkit-transform 0.7s;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+      }
+      .flip-card:hover .flip-card-inner,
+      .flip-card.flipped .flip-card-inner {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+      }
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .flip-card-back {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+      }
+
+    </style>
+    <!-- Native Browser-Parsed Styles (Bypass Tailwind compiler to avoid opacity and dot positioning issues on WebKit/Safari) -->
+    <style>
+      .slide {
+        opacity: 0 !important;
+        transition: opacity 1s ease-in-out !important;
+        -webkit-transition: opacity 1s ease-in-out !important;
+        pointer-events: none !important;
+        z-index: 1 !important;
+      }
+      .slide.active {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        z-index: 10 !important;
+      }
+    </style>
+  </head>
+  <body class="antialiased selection:bg-orange/20 selection:text-orange-deep">
+
+    <!-- ============ 1. TOP STRIP (Top Bar) ============ -->
+    <div class="bg-ink text-yellow text-xs border-b border-white/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 h-11 flex items-center justify-between font-mono tracking-wider">
+        <div class="flex items-center gap-3 sm:gap-4 mx-auto sm:mx-0">
+          <!-- Phone link: icon only on mobile, text on desktop -->
+          <a href="tel:12465381426" class="hover:text-white transition-colors flex items-center gap-1">
+            <iconify-icon icon="ph:phone-fill" class="text-sm sm:hidden"></iconify-icon>
+            <span class="sm:hidden">1-246-538-1426</span><span class="hidden sm:inline">P: 1-246-538-1426</span>
+          </a>
+          <span class="text-white/20">•</span>
+          <!-- Email link: icon only on mobile, text on desktop -->
+          <a href="mailto:hello@zephirinsbakery.bb" class="hover:text-white transition-colors flex items-center gap-1">
+            <iconify-icon icon="ph:envelope-simple-fill" class="text-sm sm:hidden"></iconify-icon>
+            <span class="hidden sm:inline">E: hello@zephirinsbakery.bb</span>
+          </a>
+        </div>
+        <div class="hidden sm:flex items-center gap-4 text-base">
+          <a href="https://www.instagram.com/zephirinsbakeries/" target="_blank" class="hover:text-white transition-colors flex items-center" aria-label="Instagram"><iconify-icon icon="ph:instagram-logo-bold"></iconify-icon></a>
+          <span class="text-white/20">•</span>
+          <a href="https://www.facebook.com/zephirinsbakeries/" target="_blank" class="hover:text-white transition-colors flex items-center" aria-label="Facebook"><iconify-icon icon="ph:facebook-logo-bold"></iconify-icon></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ 2. STICKY HEADER ============ -->
+    <header id="site-header" class="sticky top-0 z-50 bg-paper/95 backdrop-blur-md border-b border-ink/10 transition-all duration-300">
+      <!-- Top Row: Centered Logo (Desktop only) -->
+      <div class="hidden lg:flex max-w-7xl mx-auto px-6 lg:px-10 py-5 justify-center border-b border-ink/5">
+        <a href="index.html" class="flex items-center">
+          <img src="images/zephirin-bakeries-logo-transparent.png" alt="Zephirin's Bakery" class="h-[100px] w-auto" />
+        </a>
+      </div>
+      <!-- Bottom Row: Navigation and Controls (Single Row on Mobile, Double on Desktop) -->
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 lg:h-16 flex items-center justify-between relative">
+        <!-- Left: Hamburger List Icon (triggers Mobile/Sidebar Nav) -->
+        <button onclick="toggleMobileNav()" class="flex items-center justify-center w-10 h-10 -ml-2 text-ink hover:text-orange transition-colors cursor-pointer" aria-label="Toggle Navigation">
+          <iconify-icon icon="ph:list-bold" class="text-2xl"></iconify-icon>
+        </button>
+
+        <!-- Mobile-only Centered Logo -->
+        <div class="lg:hidden flex items-center justify-center absolute left-1/2 -translate-x-1/2">
+          <a href="index.html">
+            <img src="images/zephirin-bakeries-logo-transparent.png" alt="Zephirin's Bakery" class="h-14 w-auto" />
+          </a>
+        </div>
+
+        <!-- Center: Centered Menu Links (Desktop only) -->
+        <nav class="hidden lg:flex items-center gap-8 text-[13px] font-bold uppercase tracking-wider text-ink-2">
+          <a href="index.html" class="text-orange relative pb-1 after:content-[''] after:absolute after:left-0 after:right-0 after:-bottom-[2px] after:h-[2px] after:bg-orange">Home</a>
+          
+          <!-- Products Dropdown -->
+          <div class="relative group py-4">
+            <button class="hover:text-orange transition-colors flex items-center gap-1 font-bold uppercase tracking-wider cursor-pointer">
+              Products
+              <iconify-icon icon="ph:caret-down-bold" class="text-xs transition-transform duration-200 group-hover:rotate-180"></iconify-icon>
+            </button>
+            <div class="absolute left-0 mt-2 w-48 bg-paper border border-ink/10 rounded-2xl shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="bakery.html" class="block px-4 py-2.5 text-xs text-ink hover:bg-cream hover:text-orange transition-colors font-medium normal-case">Bakery</a>
+              <a href="convenience.html" class="block px-4 py-2.5 text-xs text-ink hover:bg-cream hover:text-orange transition-colors font-medium normal-case">Convenience Store</a>
+            </div>
+          </div>
+
+          <a href="recipes.html" class="hover:text-orange transition-colors">Recipes</a>
+          <a href="locator.html" class="hover:text-orange transition-colors">Where to Find Us</a>
+          <a href="about.html" class="hover:text-orange transition-colors">Heritage & Community</a>
+          <a href="feedback.html" class="hover:text-orange transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right: Curved CTA Button -->
+        <a href="contact.html" aria-label="Stock Zephirin's" class="bg-orange hover:bg-orange-deep text-white transition-all duration-200 rounded-full w-10 h-10 sm:w-auto sm:h-auto flex items-center justify-center sm:px-6 sm:py-2.5 text-xs font-bold uppercase tracking-wider shadow-sm z-10">
+          <!-- Icon only on phones so it doesn't overlap the centred logo -->
+          <iconify-icon icon="ph:storefront-bold" class="text-lg sm:hidden"></iconify-icon>
+          <span class="hidden sm:inline">Stock Zephirin's</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- ============ 3. HERO SLIDER ============ -->
+    <section class="relative overflow-hidden w-full h-[85vh] sm:h-[80vh] lg:h-[90vh] bg-ink">
+      <!-- Slides Container -->
+      <div id="hero-slider" class="relative w-full h-full">
+        <!-- Slide 1 -->
+        <div class="slide active absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out flex flex-col lg:flex-row">
+          <!-- Left Column: Image -->
+          <div class="w-full lg:w-1/2 h-[45%] lg:h-full relative overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center transition-all duration-[10000ms] ease-out scale-100 bg-image" style="background-image: url('images/hero_breakfast_scene.jpg');"></div>
+            <div class="absolute inset-0 bg-black/30 lg:hidden"></div>
+          </div>
+          <!-- Right Column: Content -->
+          <div class="w-full lg:w-1/2 h-[55%] lg:h-full bg-cream flex flex-col justify-center items-center lg:items-start text-center lg:text-left px-6 sm:px-12 lg:px-16 xl:px-24 py-8 lg:py-16 text-ink relative">
+            <div class="w-full max-w-xl lg:border lg:border-yellow/30 lg:p-10 xl:p-14 lg:rounded-[2.5rem] lg:bg-paper/40 lg:backdrop-blur-sm lg:shadow-sm">
+              <p class="eyebrow mb-2 lg:mb-5 text-orange eyebrow-rule">FINEST ARTISAN BAKES</p>
+              <h1 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-display font-medium leading-[1.15] text-ink mb-3 lg:mb-5">Savor the <span class="italic font-light text-yellow">sunrise</span> in every bite.</h1>
+              <p class="text-xs sm:text-sm lg:text-base text-ink-2/90 font-light leading-relaxed mb-5 lg:mb-8 max-w-md">Barbados' premium heritage bakery since 1923. Experience daily fresh bakes delivered to every parish before the island wakes.</p>
+              <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 w-full max-w-xs lg:max-w-none mx-auto lg:mx-0">
+                <a href="bakery.html" class="w-full sm:w-auto text-center bg-orange hover:bg-orange-deep text-white font-mono uppercase tracking-wider text-[10px] lg:text-xs font-semibold px-6 lg:px-8 py-3 lg:py-3.5 rounded-full transition-all duration-300 shadow-md animate-scaleUp">
+                  Explore products
+                </a>
+                <a href="#about" class="w-full sm:w-auto text-center border border-ink/20 hover:border-ink hover:bg-ink hover:text-white text-ink font-mono uppercase tracking-wider text-[10px] lg:text-xs font-semibold px-6 lg:px-8 py-3 lg:py-3.5 rounded-full transition-all duration-300">
+                  Our Heritage
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Slide 2 -->
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out flex flex-col lg:flex-row">
+          <!-- Left Column: Image -->
+          <div class="w-full lg:w-1/2 h-[45%] lg:h-full relative overflow-hidden">
+            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover transition-all duration-[10000ms] ease-out scale-100 bg-image">
+              <source src="images/smooth_transiton_202606120450.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute inset-0 bg-black/30 lg:hidden"></div>
+          </div>
+          <!-- Right Column: Content -->
+          <div class="w-full lg:w-1/2 h-[55%] lg:h-full bg-cream flex flex-col justify-center items-center lg:items-start text-center lg:text-left px-6 sm:px-12 lg:px-16 xl:px-24 py-8 lg:py-16 text-ink relative">
+            <div class="w-full max-w-xl lg:border lg:border-yellow/30 lg:p-10 xl:p-14 lg:rounded-[2.5rem] lg:bg-paper/40 lg:backdrop-blur-sm lg:shadow-sm">
+              <p class="eyebrow mb-2 lg:mb-5 text-orange eyebrow-rule">PROVEN BY TIME · BAKED DAILY</p>
+              <h1 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-display font-medium leading-[1.15] text-ink mb-3 lg:mb-5">Proven by time, <span class="italic font-light text-yellow">baked</span> with care.</h1>
+              <p class="text-xs sm:text-sm lg:text-base text-ink-2/90 font-light leading-relaxed mb-5 lg:mb-8 max-w-md">From the first proof to the last golden-brown loaf out the door — every batch gets our full attention before the island wakes.</p>
+              <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 w-full max-w-xs lg:max-w-none mx-auto lg:mx-0">
+                <a href="contact.html" class="w-full sm:w-auto text-center bg-orange hover:bg-orange-deep text-white font-mono uppercase tracking-wider text-[10px] lg:text-xs font-semibold px-6 lg:px-8 py-3 lg:py-3.5 rounded-full transition-all duration-300 shadow-md">
+                  Stock Zephirin's
+                </a>
+                <a href="locator.html" class="w-full sm:w-auto text-center border border-ink/20 hover:border-ink hover:bg-ink hover:text-white text-ink font-mono uppercase tracking-wider text-[10px] lg:text-xs font-semibold px-6 lg:px-8 py-3 lg:py-3.5 rounded-full transition-all duration-300">
+                  Where to Find Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Slide 3 -->
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out flex flex-col lg:flex-row">
+          <!-- Left Column: Image -->
+          <div class="w-full lg:w-1/2 h-[45%] lg:h-full relative overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center transition-all duration-[10000ms] ease-out scale-100 bg-image" style="background-image: url('images/hero_sweet_bread_breakfast.png');"></div>
+            <div class="absolute inset-0 bg-black/30 lg:hidden"></div>
+          </div>
+          <!-- Right Column: Content -->
+          <div class="w-full lg:w-1/2 h-[55%] lg:h-full bg-cream flex flex-col justify-center items-center lg:items-start text-center lg:text-left px-6 sm:px-12 lg:px-16 xl:px-24 py-8 lg:py-16 text-ink relative">
+            <div class="w-full max-w-xl lg:border lg:border-yellow/30 lg:p-10 xl:p-14 lg:rounded-[2.5rem] lg:bg-paper/40 lg:backdrop-blur-sm lg:shadow-sm">
+              <p class="eyebrow mb-2 lg:mb-5 text-orange eyebrow-rule">TRADITIONAL BAJAN TREATS</p>
+              <h1 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-display font-medium leading-[1.15] text-ink mb-3 lg:mb-5">Savor the sweetness of <span class="italic font-light text-yellow">island life</span>.</h1>
+              <p class="text-xs sm:text-sm lg:text-base text-ink-2/90 font-light leading-relaxed mb-5 lg:mb-8 max-w-md">From classic coconut sweet bread to fresh turnovers and pastries, we bake Bajan morning traditions fresh daily.</p>
+              <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 w-full max-w-xs lg:max-w-none mx-auto lg:mx-0">
+                <a href="bakery.html" class="w-full sm:w-auto text-center bg-orange hover:bg-orange-deep text-white font-mono uppercase tracking-wider text-[10px] lg:text-xs font-semibold px-6 lg:px-8 py-3 lg:py-3.5 rounded-full transition-all duration-300 shadow-md">
+                  Explore products
+                </a>
+                <a href="recipes.html" class="w-full sm:w-auto text-center border border-ink/20 hover:border-ink hover:bg-ink hover:text-white text-ink font-mono uppercase tracking-wider text-[10px] lg:text-xs font-semibold px-6 lg:px-8 py-3 lg:py-3.5 rounded-full transition-all duration-300">
+                  View Bajan recipes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls (Positioned over the left column on desktop) -->
+      <button onclick="prevSlide()" class="absolute left-4 top-[22.5%] -translate-y-1/2 lg:left-6 lg:top-1/2 lg:-translate-y-1/2 z-20 w-10 lg:w-12 h-10 lg:h-12 rounded-full bg-black/20 hover:bg-black/40 text-white hover:text-yellow flex items-center justify-center border border-white/10 hover:border-yellow/30 hover:scale-105 transition-all duration-200 cursor-pointer" aria-label="Previous Slide">
+        <iconify-icon icon="ph:caret-left-bold" class="text-xl"></iconify-icon>
+      </button>
+      <button onclick="nextSlide()" class="absolute right-4 top-[22.5%] -translate-y-1/2 lg:right-auto lg:left-[calc(50%-4rem)] lg:top-1/2 lg:-translate-y-1/2 z-20 w-10 lg:w-12 h-10 lg:h-12 rounded-full bg-black/20 hover:bg-black/40 text-white hover:text-yellow flex items-center justify-center border border-white/10 hover:border-yellow/30 hover:scale-105 transition-all duration-200 cursor-pointer" aria-label="Next Slide">
+        <iconify-icon icon="ph:caret-right-bold" class="text-xl"></iconify-icon>
+      </button>
+
+      <!-- Slider Indicators -->
+      <div class="absolute bottom-4 lg:bottom-8 left-1/2 lg:left-1/4 -translate-x-1/2 z-20 flex gap-3">
+        <button id="slider-dot-0" onclick="setSlide(0)" class="slider-dot w-2.5 h-2.5 rounded-full active-dot" aria-label="Go to slide 1"></button>
+        <button id="slider-dot-1" onclick="setSlide(1)" class="slider-dot w-2.5 h-2.5 rounded-full" aria-label="Go to slide 2"></button>
+        <button id="slider-dot-2" onclick="setSlide(2)" class="slider-dot w-2.5 h-2.5 rounded-full" aria-label="Go to slide 3"></button>
+      </div>
+    </section>
+
+    <!-- ============ 4. CONTACT RIBBON BAR ============ -->
+    <section class="bg-ink text-white py-6 border-b border-white/5 relative z-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 text-sm font-mono tracking-wide">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <iconify-icon icon="ph:envelope-simple-bold" class="text-yellow text-lg"></iconify-icon>
+            <span>hello@zephirinsbakery.bb</span>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-2.5 md:justify-center">
+            <iconify-icon icon="ph:phone-bold" class="text-yellow text-lg"></iconify-icon>
+            <span>1-246-538-1426</span>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-2.5 md:justify-end">
+            <iconify-icon icon="ph:map-pin-bold" class="text-yellow text-lg"></iconify-icon>
+            <span>Tudor Bridge, Bridgetown, Saint Michael Barbados</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. "WHO WE ARE" / ABOUT SECTION ============ -->
+    <section id="about" class="relative overflow-hidden py-24 lg:py-32 bg-paper">
+      <!-- Left Side Faint Sketch of Bread -->
+      <div class="absolute left-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
+        <img src="images/sketch_bread_left.png" alt="" class="w-full h-auto" />
+      </div>
+      <!-- Right Side Faint Sketch of Pretzel -->
+      <div class="absolute right-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
+        <img src="images/sketch_pretzel_right.png" alt="" class="w-full h-auto" />
+      </div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+        <!-- Overlapping Image Collage -->
+        <div class="relative flex items-center justify-center w-full min-h-[460px] md:min-h-[520px]">
+          <!-- Large vertical Main image -->
+          <div class="absolute left-0 top-0 w-[55%] aspect-[3/4] rounded-3xl overflow-hidden shadow-xl border border-ink/5 z-10 transition-transform duration-500 hover:scale-[1.02]">
+            <img src="images/zephirins_shelf_products.jpg" alt="Zephirin's bread products on shelves" class="w-full h-full object-cover" />
+          </div>
+          <!-- Offset horizontal image -->
+          <div class="absolute right-0 bottom-0 w-[60%] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-paper z-20 transition-transform duration-500 hover:scale-[1.02]">
+            <img src="images/zephirins_factory_exterior_highres.png" alt="Zephirin's Bakery building exterior" class="w-full h-full object-cover" />
+          </div>
+          <!-- Decorative Background Glow -->
+          <div class="absolute top-[20%] right-[30%] w-36 h-36 rounded-full sunrise-dot opacity-30 blur-2xl z-0"></div>
+        </div>
+        
+        <!-- Text details and progress bars -->
+        <div>
+          <p class="eyebrow eyebrow-rule mb-5">Who We Are</p>
+          <h2 class="text-h2">Building a <span class="italic font-light text-orange">century</span> of mornings.</h2>
+          <p class="text-lead mt-6 max-w-lg">
+            We are more than just a bakery — we are a family of bakers committed to doing one thing properly: putting bread Barbados can rely on into every basket, every morning. From a single Bridgetown oven in 1923 to vans crossing every parish before dawn, the recipe for what matters hasn't changed.
+          </p>
+
+          <!-- Modern Animated Progress Bars -->
+          <div class="mt-10 space-y-6 max-w-lg">
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-2">
+                <span class="text-ink font-mono uppercase tracking-wider text-xs">Centuries Baked</span>
+                <span class="text-orange font-mono text-xs">100%</span>
+              </div>
+              <div class="w-full h-2 bg-cream rounded-full overflow-hidden">
+                <div class="h-full bg-orange rounded-full transition-all duration-1000" style="width: 100%;"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-2">
+                <span class="text-ink font-mono uppercase tracking-wider text-xs">Parish Deliveries</span>
+                <span class="text-orange font-mono text-xs">100%</span>
+              </div>
+              <div class="w-full h-2 bg-cream rounded-full overflow-hidden">
+                <div class="h-full bg-orange rounded-full transition-all duration-1000" style="width: 100%;"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-2">
+                <span class="text-ink font-mono uppercase tracking-wider text-xs">Sunrise Satisfaction</span>
+                <span class="text-orange font-mono text-xs">95%</span>
+              </div>
+              <div class="w-full h-2 bg-cream rounded-full overflow-hidden">
+                <div class="h-full bg-orange rounded-full transition-all duration-1000" style="width: 95%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10 flex flex-wrap items-center gap-6">
+            <a href="#contact-form-section" class="btn-dark inline-flex items-center gap-2 rounded-full px-8 py-3.5 font-semibold">
+              Get in touch
+              <iconify-icon icon="ph:arrow-right-bold"></iconify-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. HORIZONTAL BANNERS (4 stacked rows) ============ -->
+    <section class="w-full flex flex-col border-t border-b border-ink/10 bg-paper">
+      <!-- Row 1 -->
+      <a href="#about" class="group relative block w-full overflow-hidden border-b border-ink/10">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/salt_bread.png');"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-16 relative z-10 flex items-center justify-between text-white">
+          <div>
+            <p class="font-mono text-xs text-yellow tracking-widest uppercase mb-1">01 — Daily Breads</p>
+            <h3 class="text-h3 font-display transition-colors group-hover:text-yellow">Salt bread, coconut bread &amp; whole wheat</h3>
+          </div>
+          <span class="w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
+            <iconify-icon icon="ph:arrow-right-bold" class="text-xl"></iconify-icon>
+          </span>
+        </div>
+      </a>
+
+      <!-- Row 2 -->
+      <a href="#about" class="group relative block w-full overflow-hidden border-b border-ink/10">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/hamburger_buns_1777241720309.png');"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-16 relative z-10 flex items-center justify-between text-white">
+          <div>
+            <p class="font-mono text-xs text-yellow tracking-widest uppercase mb-1">02 — Buns &amp; Rolls</p>
+            <h3 class="text-h3 font-display transition-colors group-hover:text-yellow">Burger buns, dinner rolls &amp; sweet buns</h3>
+          </div>
+          <span class="w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
+            <iconify-icon icon="ph:arrow-right-bold" class="text-xl"></iconify-icon>
+          </span>
+        </div>
+      </a>
+
+      <!-- Row 3 -->
+      <a href="#about" class="group relative block w-full overflow-hidden border-b border-ink/10">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/raisin_bread.png');"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-16 relative z-10 flex items-center justify-between text-white">
+          <div>
+            <p class="font-mono text-xs text-yellow tracking-widest uppercase mb-1">03 — Teatime &amp; Treats</p>
+            <h3 class="text-h3 font-display transition-colors group-hover:text-yellow">Sweet buns &amp; hot cross buns</h3>
+          </div>
+          <span class="w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
+            <iconify-icon icon="ph:arrow-right-bold" class="text-xl"></iconify-icon>
+          </span>
+        </div>
+      </a>
+
+      <!-- Row 4 -->
+      <a href="convenience.html" class="group relative block w-full overflow-hidden last:border-0">
+        <div class="absolute inset-0 bg-cover transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/zephirins_factory_exterior_highres.png'); background-position: center 14%;"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-20 relative z-10 flex items-center justify-between text-white">
+          <div>
+            <p class="font-mono text-xs text-yellow tracking-widest uppercase mb-1">04 — Convenience Store</p>
+            <h3 class="text-h3 font-display transition-colors group-hover:text-yellow">Zephirin's Convenience Store opens 7 days a week from 6:30a.m to 9:00p.m</h3>
+          </div>
+          <span class="w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
+            <iconify-icon icon="ph:arrow-right-bold" class="text-xl"></iconify-icon>
+          </span>
+        </div>
+      </a>
+    </section>
+
+    <!-- ============ 7. GATEWAY TO PREMIUM SERVICES (Flip Boxes) ============ -->
+    <section id="services" class="py-24 lg:py-32 bg-cream">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-3 gap-12 items-start">
+        <!-- Left Side Column -->
+        <div class="lg:sticky lg:top-28">
+          <p class="eyebrow mb-4">Our Services</p>
+          <h2 class="text-h2 leading-none mb-6">Everything we bring to your table.</h2>
+          <a href="locator.html" class="inline-flex items-center gap-2 text-sm font-semibold text-ink border-b-2 border-orange pb-1 hover:text-orange transition-colors">
+            Where to find us
+            <iconify-icon icon="ph:arrow-right-bold"></iconify-icon>
+          </a>
+        </div>
+
+        <!-- Right Side Flip Box Grid -->
+        <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="flip-card w-full h-[320px] [perspective:1000px] cursor-pointer" onclick="toggleFlip(this)">
+            <div class="flip-card-inner relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]">
+              <!-- Front -->
+              <div class="flip-card-front absolute inset-0 w-full h-full [backface-visibility:hidden] bg-paper border border-ink/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+                <div class="flex flex-col gap-6">
+                  <span class="w-14 h-14 rounded-2xl bg-cream flex items-center justify-center text-2xl text-orange"><iconify-icon icon="ph:bread-bold"></iconify-icon></span>
+                  <div>
+                    <h3 class="font-bold text-xl text-ink font-display">Daily Baking</h3>
+                    <p class="text-xs text-muted mt-2 font-mono uppercase tracking-wider">Est. 1923</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
+              </div>
+              <!-- Back -->
+              <div class="flip-card-back absolute inset-0 w-full h-full [backface-visibility:hidden] bg-ink text-white rounded-3xl p-8 flex flex-col justify-between [transform:rotateY(180deg)] shadow-md">
+                <div class="flex flex-col gap-4">
+                  <h3 class="font-bold text-xl text-yellow font-display">Daily Baking</h3>
+                  <p class="text-sm text-white/70 leading-relaxed">Fresh loaves, salt bread, coconut buns and sweet pastries, baked fresh and hot before sunrise every single day.</p>
+                </div>
+                <a href="bakery.html" class="btn-primary inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-xs font-semibold w-full">View Products</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flip-card w-full h-[320px] [perspective:1000px] cursor-pointer" onclick="toggleFlip(this)">
+            <div class="flip-card-inner relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]">
+              <!-- Front -->
+              <div class="flip-card-front absolute inset-0 w-full h-full [backface-visibility:hidden] bg-paper border border-ink/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+                <div class="flex flex-col gap-6">
+                  <span class="w-14 h-14 rounded-2xl bg-cream flex items-center justify-center text-2xl text-orange"><iconify-icon icon="ph:truck-bold"></iconify-icon></span>
+                  <div>
+                    <h3 class="font-bold text-xl text-ink font-display">Island-Wide Availability</h3>
+                    <p class="text-xs text-muted mt-2 font-mono uppercase tracking-wider">Supermarkets &amp; Retailers</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
+              </div>
+              <!-- Back -->
+              <div class="flip-card-back absolute inset-0 w-full h-full [backface-visibility:hidden] bg-ink text-white rounded-3xl p-8 flex flex-col justify-between [transform:rotateY(180deg)] shadow-md">
+                <div class="flex flex-col gap-4">
+                  <h3 class="font-bold text-xl text-yellow font-display">Island-Wide Availability</h3>
+                  <p class="text-sm text-white/70 leading-relaxed">Our fresh bread and bakery products are delivered daily and available at major supermarkets, convenience stores, and retail partners across Barbados.</p>
+                </div>
+                <a href="locator.html" class="btn-primary inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-xs font-semibold w-full">Where to Find Us</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flip-card w-full h-[320px] [perspective:1000px] cursor-pointer" onclick="toggleFlip(this)">
+            <div class="flip-card-inner relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]">
+              <!-- Front -->
+              <div class="flip-card-front absolute inset-0 w-full h-full [backface-visibility:hidden] bg-paper border border-ink/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+                <div class="flex flex-col gap-6">
+                  <span class="w-14 h-14 rounded-2xl bg-cream flex items-center justify-center text-2xl text-orange"><iconify-icon icon="ph:storefront-bold"></iconify-icon></span>
+                  <div>
+                    <h3 class="font-bold text-xl text-ink font-display">Convenience Store</h3>
+                    <p class="text-xs text-muted mt-2 font-mono uppercase tracking-wider">Daily Essentials</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
+              </div>
+              <!-- Back -->
+              <div class="flip-card-back absolute inset-0 w-full h-full [backface-visibility:hidden] bg-ink text-white rounded-3xl p-8 flex flex-col justify-between [transform:rotateY(180deg)] shadow-md">
+                <div class="flex flex-col gap-4">
+                  <h3 class="font-bold text-xl text-yellow font-display">Convenience Store</h3>
+                  <p class="text-sm text-white/70 leading-relaxed">Visit our convenience store right next to our ovens. Grab fresh salt bread drops, ice-cold drinks, Bajan snacks, and daily groceries.</p>
+                </div>
+                <a href="convenience.html" class="btn-primary inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-xs font-semibold w-full">View Products</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="flip-card w-full h-[320px] [perspective:1000px] cursor-pointer" onclick="toggleFlip(this)">
+            <div class="flip-card-inner relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]">
+              <!-- Front -->
+              <div class="flip-card-front absolute inset-0 w-full h-full [backface-visibility:hidden] bg-paper border border-ink/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+                <div class="flex flex-col gap-6">
+                  <span class="w-14 h-14 rounded-2xl bg-cream flex items-center justify-center text-2xl text-orange"><iconify-icon icon="ph:book-open-bold"></iconify-icon></span>
+                  <div>
+                    <h3 class="font-bold text-xl text-ink font-display">Recipes &amp; Cooking</h3>
+                    <p class="text-xs text-muted mt-2 font-mono uppercase tracking-wider">Bake with Zephirin's</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
+              </div>
+              <!-- Back -->
+              <div class="flip-card-back absolute inset-0 w-full h-full [backface-visibility:hidden] bg-ink text-white rounded-3xl p-8 flex flex-col justify-between [transform:rotateY(180deg)] shadow-md">
+                <div class="flex flex-col gap-4">
+                  <h3 class="font-bold text-xl text-yellow font-display">Recipes &amp; Cooking</h3>
+                  <p class="text-sm text-white/70 leading-relaxed">Discover creative and delicious ways to prepare our signature bakery loaves, from classic Bajan bread pudding to gourmet sandwiches.</p>
+                </div>
+                <a href="recipes.html" class="btn-primary inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-xs font-semibold w-full">View Recipes</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. VOICES OF DELIGHT (Testimonial Carousel/Grid) ============ -->
+    <section class="relative overflow-hidden py-24 lg:py-32 bg-paper">
+      <!-- Left Side Faint Sketch of Bread -->
+      <div class="absolute left-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
+        <img src="images/sketch_bread_left.png" alt="" class="w-full h-auto" />
+      </div>
+      <!-- Right Side Faint Sketch of Pretzel -->
+      <div class="absolute right-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
+        <img src="images/sketch_pretzel_right.png" alt="" class="w-full h-auto" />
+      </div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+        <div class="max-w-2xl mb-16">
+          <p class="eyebrow eyebrow-rule mb-4">Voices of Delight</p>
+          <h2 class="text-h2">Echoes of <span class="italic font-light text-orange">excellence</span>: customer experiences</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Quote 1 -->
+          <figure class="bg-paper border border-ink/10 rounded-3xl p-8 card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex gap-1 text-orange mb-6">
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+              </div>
+              <blockquote class="text-lg leading-relaxed text-ink-2 font-medium">
+                "Same bread my grandmother bought in Bridgetown sixty years ago — still the first thing in my basket every Saturday morning."
+              </blockquote>
+            </div>
+            <figcaption class="mt-8 flex items-center gap-4 border-t border-ink/5 pt-6">
+              <span class="w-10 h-10 rounded-full bg-orange flex items-center justify-center text-white font-bold font-mono text-sm">SJ</span>
+              <div>
+                <cite class="not-italic block font-bold text-ink text-sm">Sarah Johnson</cite>
+                <span class="text-xs text-muted font-mono uppercase tracking-wider">Secretary, St. Michael</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- Quote 2 -->
+          <figure class="bg-paper border border-ink/10 rounded-3xl p-8 card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex gap-1 text-orange mb-6">
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+              </div>
+              <blockquote class="text-lg leading-relaxed text-ink-2 font-medium">
+                "We've stocked Zephirin's at the shop for over twenty years. It moves first off the shelf, every single delivery, without fail."
+              </blockquote>
+            </div>
+            <figcaption class="mt-8 flex items-center gap-4 border-t border-ink/5 pt-6">
+              <span class="w-10 h-10 rounded-full bg-orange flex items-center justify-center text-white font-bold font-mono text-sm">MS</span>
+              <div>
+                <cite class="not-italic block font-bold text-ink text-sm">Michael Smith</cite>
+                <span class="text-xs text-muted font-mono uppercase tracking-wider">Shop Owner, Oistins</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- Quote 3 -->
+          <figure class="bg-paper border border-ink/10 rounded-3xl p-8 card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex gap-1 text-orange mb-6">
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+                <iconify-icon icon="ph:star-fill"></iconify-icon>
+              </div>
+              <blockquote class="text-lg leading-relaxed text-ink-2 font-medium">
+                "Wholesale orders arrive on time, every time — the consistency is what keeps our kitchen running smoothly during the season."
+              </blockquote>
+            </div>
+            <figcaption class="mt-8 flex items-center gap-4 border-t border-ink/5 pt-6">
+              <span class="w-10 h-10 rounded-full bg-orange flex items-center justify-center text-white font-bold font-mono text-sm">ED</span>
+              <div>
+                <cite class="not-italic block font-bold text-ink text-sm">Emily Davis</cite>
+                <span class="text-xs text-muted font-mono uppercase tracking-wider">Accountant, Holetown</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. WHOLESALE PRICING (Three Tiers) ============ -->
+
+
+    <!-- ============ 10. A CENTURY IN NUMBERS (Counters section) ============ -->
+    <section class="relative bg-ink text-white py-24 lg:py-36 overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(22, 18, 12, 0.8), rgba(22, 18, 12, 0.9)), url('images/packaged_breads_banner.png'); background-attachment: fixed;">
+      <div class="absolute -bottom-32 -left-24 w-80 h-80 rounded-full sunrise-dot opacity-20 blur-3xl"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+        <p class="eyebrow mb-3" style="color: var(--yellow);">A Century in Numbers</p>
+        <h2 class="text-h2 max-w-xl mb-16">Built <span class="italic font-light text-yellow">morning</span> by morning, since 1923.</h2>
+        
+        <div id="stats-section" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center sm:text-left">
+          <div>
+            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="103">0</p>
+            <p class="mt-3 text-white/60 font-mono text-xs tracking-widest uppercase">Years Baking<br/>For Barbados</p>
+          </div>
+          <div>
+            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="11">0</p>
+            <p class="mt-3 text-white/60 font-mono text-xs tracking-widest uppercase">Parishes<br/>Delivered Daily</p>
+          </div>
+          <div>
+            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="50">0</p>
+            <p class="mt-3 text-white/60 font-mono text-xs tracking-widest uppercase">Products Baked<br/>Each Morning</p>
+          </div>
+          <div>
+            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="300">0</p>
+            <p class="mt-3 text-white/60 font-mono text-xs tracking-widest uppercase">Loaves Out The<br/>Door Each Month</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT FORM / PARTNERSHIP INQUIRY ============ -->
+    <section id="contact-form-section" class="py-24 lg:py-32 bg-paper">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="rounded-[2.5rem] bg-cream p-10 md:p-16 grid lg:grid-cols-2 gap-12 items-center relative overflow-hidden">
+          <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full sunrise-dot opacity-25 blur-2xl"></div>
+          
+          <div class="relative">
+            <p class="eyebrow eyebrow-rule mb-5">Get in touch</p>
+            <h2 class="text-h2 leading-none">Let's get Zephirin's on your <span class="italic font-light text-orange">shelf</span>.</h2>
+            <p class="text-lead mt-6 max-w-md">Stockists, canteens, hotels, or distributors — fill out the form or reach out directly. We will follow up within one business day.</p>
+            
+            <div class="mt-10 space-y-4 font-mono text-sm">
+              <div class="flex items-center gap-3">
+                <iconify-icon icon="ph:phone-bold" class="text-orange text-lg"></iconify-icon>
+                <span>1-246-538-1426</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <iconify-icon icon="ph:envelope-simple-bold" class="text-orange text-lg"></iconify-icon>
+                <span>hello@zephirinsbakery.bb</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Form with custom submit action -->
+          <div class="relative bg-paper p-8 rounded-3xl shadow-sm border border-ink/5 z-10">
+            <form id="stockist-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
+              <div>
+                <label for="name" class="block text-xs font-mono uppercase tracking-wider text-ink-2 mb-2">Your Name</label>
+                <input type="text" id="name" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="Enter your full name" />
+              </div>
+              <div>
+                <label for="business" class="block text-xs font-mono uppercase tracking-wider text-ink-2 mb-2">Business Name</label>
+                <input type="text" id="business" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="Supermarket / Cafe / Canteen name" />
+              </div>
+              <div>
+                <label for="email" class="block text-xs font-mono uppercase tracking-wider text-ink-2 mb-2">Email Address</label>
+                <input type="email" id="email" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="name@business.com" />
+              </div>
+              <div>
+                <label for="phone" class="block text-xs font-mono uppercase tracking-wider text-ink-2 mb-2">Telephone Number</label>
+                <input type="tel" id="phone" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="e.g. +1 246-XXX-XXXX" />
+              </div>
+              <div>
+                <label for="message" class="block text-xs font-mono uppercase tracking-wider text-ink-2 mb-2">Inquiry / Message</label>
+                <textarea id="message" rows="3" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all resize-none" placeholder="Tell us about your requirements..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary w-full justify-center rounded-full py-3.5 font-semibold text-sm cursor-pointer flex items-center gap-2">
+                Submit inquiry
+                <iconify-icon icon="ph:arrow-right-bold"></iconify-icon>
+              </button>
+            </form>
+
+            <!-- Success Visual Feedback Panel -->
+            <div id="form-success" class="hidden absolute inset-0 bg-paper rounded-3xl p-8 flex flex-col items-center justify-center text-center z-20">
+              <span class="w-16 h-16 rounded-full bg-cream flex items-center justify-center text-3xl text-orange mb-6"><iconify-icon icon="ph:check-circle-bold"></iconify-icon></span>
+              <h3 class="font-display font-bold text-xl text-ink">Inquiry Submitted!</h3>
+              <p class="text-sm text-muted mt-3 max-w-xs leading-relaxed">Thank you. Someone from the Zephirin's family will contact you within 24 hours.</p>
+              <button onclick="resetForm()" class="btn-outline-dark mt-6 text-xs rounded-full px-5 py-2 font-semibold">Send another message</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 11. EARTHY FOOTER ============ -->
+    <footer class="bg-ink text-white border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-20 pb-10">
+        <div class="grid md:grid-cols-12 gap-12">
+          
+          <div class="md:col-span-5">
+            <a href="#" class="flex items-center mb-6">
+              <img src="images/zephirin-bakeries-logo-white-text.png" alt="Zephirin's Bakery" class="h-[94px] w-auto" />
+            </a>
+            <p class="text-white/60 max-w-xs leading-relaxed text-[15px]">
+              Barbados' bakery since 1923 — fresh bread baked before sunrise and delivered to every parish on the island.
+            </p>
+            <div class="flex items-center gap-4 mt-8">
+              <a href="https://www.instagram.com/zephirinsbakeries/" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-orange hover:text-white transition-colors" aria-label="Instagram"><iconify-icon icon="ph:instagram-logo-bold"></iconify-icon></a>
+              <a href="https://www.facebook.com/zephirinsbakeries/" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-orange hover:text-white transition-colors" aria-label="Facebook"><iconify-icon icon="ph:facebook-logo-bold"></iconify-icon></a>
+            </div>
+          </div>
+
+          <div class="md:col-span-2">
+            <p class="eyebrow mb-5" style="color: var(--yellow);">Explore</p>
+            <ul class="space-y-3 text-white/60 text-sm font-medium">
+              <li><a href="bakery.html" class="hover:text-white transition-colors font-normal">Bakery Products</a></li>
+              <li><a href="convenience.html" class="hover:text-white transition-colors font-normal">Convenience Store</a></li>
+              <li><a href="recipes.html" class="hover:text-white transition-colors font-normal">Recipes</a></li>
+              <li><a href="locator.html" class="hover:text-white transition-colors font-normal">Locator</a></li>
+              <li><a href="about.html" class="hover:text-white transition-colors font-normal">Heritage & Community</a></li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-2">
+            <p class="eyebrow mb-5" style="color: var(--yellow);">Company</p>
+            <ul class="space-y-3 text-white/60 text-sm font-medium">
+              <li><a href="about.html" class="hover:text-white transition-colors font-normal">Heritage</a></li>
+              <li><a href="vacancies.html" class="hover:text-white transition-colors font-normal">Careers &amp; Vacancies</a></li>
+              <li><a href="#" class="hover:text-white transition-colors font-normal">Privacy policy</a></li>
+              <li><a href="feedback.html" class="hover:text-white transition-colors font-normal">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-3">
+            <p class="eyebrow mb-5" style="color: var(--yellow);">Headquarters</p>
+            <p class="text-white/60 leading-relaxed font-mono text-sm mb-4">
+              Tudor Bridge<br/>Bridgetown, Saint Michael<br/>Barbados
+            </p>
+            <div class="w-full h-32 border border-white/10 rounded-xl overflow-hidden opacity-85 hover:opacity-100 transition-opacity">
+              <iframe 
+                src="https://maps.google.com/maps?q=Tudor%20Bridge,%20Bridgetown,%20Saint%20Michael,%20Barbados&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-full border-0 filter invert-[0.9] hue-rotate-[180deg]" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-white/40 font-mono">
+          <p>Zephirin's Bakery · © 1923–2026. All rights reserved.</p>
+          <p class="flex items-center gap-2">
+            <iconify-icon icon="ph:sparkle-fill" class="text-yellow"></iconify-icon>
+            As fresh as the morning sunrise
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ INTERACTIVE SCRIPTS ============ -->
+    <script>
+      // Sticky header background and border changes on scroll
+      window.addEventListener('scroll', function() {
+        const header = document.getElementById('site-header');
+        if (window.scrollY > 50) {
+          header.classList.remove('border-transparent');
+          header.classList.add('bg-paper/95', 'border-ink/10', 'shadow-sm');
+        } else {
+          header.classList.remove('bg-paper/95', 'border-ink/10', 'shadow-sm');
+          header.classList.add('border-transparent');
+        }
+      });
+
+      // Hero Slider slide transitions
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.slide');
+      const dots = document.querySelectorAll('.slider-dot');
+
+      function updateSlider() {
+        slides.forEach((slide, index) => {
+          if (index === currentSlide) {
+            slide.classList.add('active');
+            slide.classList.remove('opacity-0');
+            slide.classList.add('opacity-100');
+          } else {
+            slide.classList.remove('active');
+            slide.classList.remove('opacity-100');
+            slide.classList.add('opacity-0');
+          }
+        });
+
+        dots.forEach((dot, index) => {
+          if (index === currentSlide) {
+            dot.classList.add('active-dot');
+          } else {
+            dot.classList.remove('active-dot');
+          }
+        });
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlider();
+      }
+
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateSlider();
+      }
+
+      function setSlide(index) {
+        currentSlide = index;
+        updateSlider();
+      }
+
+      // Auto play hero slider
+      let slideInterval = setInterval(nextSlide, 7000);
+      
+      // Pause autoplay on button clicks
+      function resetInterval() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 7000);
+      }
+      document.querySelectorAll('button[onclick]').forEach(btn => {
+        btn.addEventListener('click', resetInterval);
+      });
+
+      // Flip box toggle for mobile/touch
+      function toggleFlip(card) {
+        // Only trigger on mobile screens where hover does not exist
+        if (window.innerWidth < 1024) {
+          card.classList.toggle('flipped');
+        }
+      }
+
+      // Stats section counter animations
+      let countersAnimated = false;
+      const statsSection = document.getElementById('stats-section');
+
+      function animateCounters() {
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+          const target = parseInt(counter.getAttribute('data-target'));
+          let current = 0;
+          const duration = 2000; // 2 seconds
+          const steps = 60;
+          const increment = target / steps;
+          const intervalTime = duration / steps;
+          
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              counter.innerText = target + (target === 50 ? "+" : (target === 300 ? "K" : ""));
+              clearInterval(timer);
+            } else {
+              counter.innerText = Math.floor(current) + (target === 300 ? "K" : "");
+            }
+          }, intervalTime);
+        });
+      }
+
+      // Trigger animations on scroll
+      window.addEventListener('scroll', function() {
+        if (!countersAnimated && statsSection) {
+          const rect = statsSection.getBoundingClientRect();
+          const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+          if (!(rect.bottom < 0 || rect.top - viewHeight >= 0)) {
+            countersAnimated = true;
+            animateCounters();
+          }
+        }
+      });
+
+      // Contact form submission
+      function handleFormSubmit(e) {
+        e.preventDefault();
+        const successPanel = document.getElementById('form-success');
+        successPanel.classList.remove('hidden');
+        successPanel.classList.add('flex');
+        document.getElementById('stockist-form').reset();
+      }
+
+      function resetForm() {
+        const successPanel = document.getElementById('form-success');
+        successPanel.classList.add('hidden');
+        successPanel.classList.remove('flex');
+      }
+
+      // Mobile nav drawer toggle
+      function toggleMobileNav() {
+        const drawer = document.getElementById('mobile-nav-drawer');
+        const backdrop = document.getElementById('mobile-nav-backdrop');
+        if (drawer.classList.contains('-translate-x-full')) {
+          drawer.classList.remove('-translate-x-full');
+          backdrop.classList.remove('opacity-0', 'pointer-events-none');
+          backdrop.classList.add('opacity-100', 'pointer-events-auto');
+        } else {
+          drawer.classList.add('-translate-x-full');
+          backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+          backdrop.classList.add('opacity-0', 'pointer-events-none');
+        }
+      }
+
+      // Floating store info widget toggle
+      function toggleStoreInfo() {
+        const card = document.getElementById('store-info-card');
+        if (card.classList.contains('hidden')) {
+          card.classList.remove('hidden');
+          card.offsetHeight; // trigger reflow
+          card.classList.remove('opacity-0', 'scale-95');
+          card.classList.add('opacity-100', 'scale-100');
+        } else {
+          card.classList.remove('opacity-100', 'scale-100');
+          card.classList.add('opacity-0', 'scale-95');
+          setTimeout(() => {
+            card.classList.add('hidden');
+          }, 300);
+        }
+      }
+    </script>
+
+    <!-- ============ MOBILE NAVIGATION DRAWER (Slide from Left) ============ -->
+    <div id="mobile-nav-drawer" class="fixed inset-y-0 left-0 z-50 w-full max-w-sm bg-ink text-white transform -translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col justify-between p-8 overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between mb-8 pb-6 border-b border-white/10">
+          <a href="index.html" class="flex items-center">
+            <img src="images/zephirin-bakeries-logo-white-text.png" alt="Zephirin's Bakery" class="h-10 w-auto" />
+          </a>
+          <button onclick="toggleMobileNav()" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 text-white transition-colors cursor-pointer" aria-label="Close menu">
+            <iconify-icon icon="ph:x-bold" class="text-xl"></iconify-icon>
+          </button>
+        </div>
+
+        <!-- Navigation Links (Mobile Only) -->
+        <nav class="flex flex-col gap-5 text-lg font-bold uppercase tracking-wider font-display lg:hidden mb-8">
+          <a href="index.html" class="text-orange">Home</a>
+          <div class="space-y-2">
+            <span class="text-white/40 text-xs font-mono tracking-widest block uppercase">Products</span>
+            <div class="pl-4 flex flex-col gap-3 border-l border-white/10">
+              <a href="bakery.html" class="text-white hover:text-yellow transition-colors text-base">Bakery</a>
+              <a href="convenience.html" class="text-white hover:text-yellow transition-colors text-base font-semibold">Convenience Store</a>
+            </div>
+          </div>
+          <a href="recipes.html" class="hover:text-yellow transition-colors">Recipes</a>
+          <a href="locator.html" class="hover:text-yellow transition-colors">Find Us</a>
+          <a href="about.html" class="hover:text-yellow transition-colors">Heritage & Community</a>
+          <a href="feedback.html" class="hover:text-yellow transition-colors">Contact</a>
+        </nav>
+
+        <!-- Convenience Store Information Section (Always Visible) -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-2">
+            <iconify-icon icon="ph:storefront-bold" class="text-yellow text-2xl"></iconify-icon>
+            <h3 class="font-display font-bold text-lg text-white">Zephirin's Convenience Store</h3>
+          </div>
+          <p class="text-xs text-white/60 leading-relaxed font-mono">
+            Located right next to our Bridgetown ovens. Drop in for daily essentials, cold drinks, and hot baked bread straight from the kitchen.
+          </p>
+          
+          <!-- Opening Hours Card -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-5 space-y-3 font-mono text-xs">
+            <p class="text-yellow font-bold uppercase tracking-widest text-[10px] mb-2 flex items-center gap-1.5">
+              <iconify-icon icon="ph:clock-bold" class="text-sm"></iconify-icon>
+              Opening Hours
+            </p>
+            <div class="flex justify-between">
+              <span class="text-white/60">Open Daily</span>
+              <span class="text-white font-semibold">6:30 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <!-- Location Detail -->
+          <div class="flex items-start gap-2.5 text-xs text-white/70 font-mono">
+            <iconify-icon icon="ph:map-pin-bold" class="text-yellow text-lg mt-0.5"></iconify-icon>
+            <div>
+              <p class="font-bold text-white">Address</p>
+              <p class="mt-0.5">Tudor Bridge, Bridgetown</p>
+              <p>Saint Michael, Barbados</p>
+            </div>
+          </div>
+          
+          <a href="convenience.html" class="block w-full bg-orange hover:bg-orange-deep text-white text-center py-3 rounded-xl font-bold uppercase tracking-wider text-xs transition-all duration-200">
+            Visit Store Page
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 mt-8 space-y-4">
+        <a href="contact.html" class="bg-orange hover:bg-orange-deep text-white block text-center py-3.5 font-bold uppercase tracking-wider text-xs transition-all duration-200 rounded-full">
+          Stock Zephirin's
+        </a>
+        <div class="space-y-2 text-xs text-white/50 font-mono">
+          <p>P: 1-246-538-1426</p>
+          <p>E: hello@zephirinsbakery.bb</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backdrop for drawer -->
+    <div id="mobile-nav-backdrop" class="fixed inset-0 z-40 bg-ink/50 opacity-0 pointer-events-none transition-opacity duration-300" onclick="toggleMobileNav()"></div>
+
+    <!-- ============ FLOATING STORE INFO WIDGET ============ -->
+    <div class="fixed bottom-6 right-6 z-40 font-mono">
+      <!-- Expanded Card (Hidden by default, toggled via JS) -->
+      <div id="store-info-card" class="hidden absolute bottom-16 right-0 w-80 bg-ink text-white rounded-3xl p-6 shadow-2xl border border-white/10 transition-all duration-300 opacity-0 scale-95 origin-bottom-right">
+        <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <iconify-icon icon="ph:storefront-bold" class="text-yellow text-xl"></iconify-icon>
+            <span class="font-display font-bold text-sm tracking-wide">Convenience Store</span>
+          </div>
+          <button onclick="toggleStoreInfo()" class="text-white/60 hover:text-white transition-colors cursor-pointer" aria-label="Close card">
+            <iconify-icon icon="ph:x-bold" class="text-sm"></iconify-icon>
+          </button>
+        </div>
+        
+        <p class="text-xs text-white/70 mb-4 leading-relaxed">
+          Call us directly during opening hours to place orders, check fresh bread drops, or verify stock.
+        </p>
+
+        <!-- Hours -->
+        <div class="space-y-2 text-xs border-b border-white/5 pb-4 mb-4">
+          <div class="flex justify-between">
+            <span class="text-white/50">Open Daily</span>
+            <span class="font-semibold text-white">6:30 AM - 9:00 PM</span>
+          </div>
+        </div>
+
+        <!-- Call & WhatsApp Actions -->
+        <div class="space-y-2">
+          <a href="tel:12465381426" class="flex items-center justify-center gap-2 bg-orange hover:bg-orange-deep text-white rounded-full py-3 text-xs font-bold uppercase tracking-wider transition-colors duration-200">
+            <iconify-icon icon="ph:phone-call-bold" class="text-sm"></iconify-icon>
+            Call: 1-246-538-1426
+          </a>
+          <a href="https://wa.me/12465381426" target="_blank" class="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full py-3 text-xs font-bold uppercase tracking-wider transition-colors duration-200">
+            <iconify-icon icon="ph:whatsapp-logo-bold" class="text-base"></iconify-icon>
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Trigger Button -->
+      <button onclick="toggleStoreInfo()" class="flex items-center gap-2.5 bg-ink text-white hover:bg-ink-2 px-5 py-3 rounded-full border border-white/15 shadow-xl transition-all duration-200 group cursor-pointer hover:scale-105 active:scale-95" aria-label="View Store Info">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-yellow"></span>
+        </span>
+        <iconify-icon icon="ph:phone-call-bold" class="text-sm text-yellow group-hover:rotate-12 transition-transform"></iconify-icon>
+        <span class="text-xs font-bold uppercase tracking-wider font-display">Store Info</span>
+      </button>
+    </div>
+  </body>
+</html>

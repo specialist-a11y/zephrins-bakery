@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery Products: Bread, Salt Bread &amp; Buns | Zephirin's</title>
+    <meta name="description" content="Browse Zephirin's full bakery range: sandwich loaves, whole wheat and ten grain breads, salt bread, burger buns, coconut bread, pastries and bread crumbs." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://zephirinsbakery.com/bakery.html" />
+    <meta name="theme-color" content="#FF5A1F" />
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Zephirin's Bakery" />
+    <meta property="og:locale" content="en_BB" />
+    <meta property="og:title" content="Bakery Products: Bread, Salt Bread &amp; Buns | Zephirin's" />
+    <meta property="og:description" content="Browse Zephirin's full bakery range: sandwich loaves, whole wheat and ten grain breads, salt bread, burger buns, coconut bread, pastries and bread crumbs." />
+    <meta property="og:url" content="https://zephirinsbakery.com/bakery.html" />
+    <meta property="og:image" content="https://zephirinsbakery.com/images/packaged_breads_banner.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bakery Products: Bread, Salt Bread &amp; Buns | Zephirin's" />
+    <meta name="twitter:description" content="Browse Zephirin's full bakery range: sandwich loaves, whole wheat and ten grain breads, salt bread, burger buns, coconut bread, pastries and bread crumbs." />
+    <meta name="twitter:image" content="https://zephirinsbakery.com/images/packaged_breads_banner.png" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zephirinsbakery.com/"}, {"@type": "ListItem", "position": 2, "name": "Bakery Products", "item": "https://zephirinsbakery.com/bakery.html"}]}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <style type="text/tailwindcss">
+      @import "tailwindcss";
+      @theme inline {
+        --color-orange: var(--orange);
+        --color-orange-deep: var(--orange-deep);
+        --color-yellow: var(--yellow);
+        --color-ink: var(--ink);
+        --color-ink-2: var(--ink-2);
+        --color-muted: var(--muted);
+        --color-cream: var(--cream);
+        --color-paper: var(--paper);
+        --font-family-display: var(--font-display);
+        --font-family-mono: var(--font-mono);
+      }
+      :root {
+        --orange: #FF5A1F;
+        --orange-deep: #E8410A;
+        --yellow: #FFB02E;
+        --ink: #16120C;
+        --ink-2: #443C31;
+        --muted: #857A69;
+        --cream: #FFF5EA;
+        --paper: #FFFFFF;
+        --font-display: 'Archivo', sans-serif;
+        --font-mono: 'IBM Plex Mono', monospace;
+      }
+      body { font-family: var(--font-display); color: var(--ink); background: var(--paper); }
+      .font-mono { font-family: var(--font-mono); }
+
+      .text-display { font-size: clamp(2.875rem, 2rem + 4.4vw, 6.5rem); font-weight: 900; letter-spacing: -0.04em; line-height: 0.92; }
+      .text-hero    { font-size: clamp(2.5rem, 1.9rem + 3vw, 4.5rem);   font-weight: 900; letter-spacing: -0.04em; line-height: 0.96; }
+      .text-h2      { font-size: clamp(2rem, 1.5rem + 2.5vw, 3.75rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+      .text-h3      { font-size: clamp(1.375rem, 1.2rem + 0.9vw, 1.875rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+      .text-lead    { font-size: clamp(1.125rem, 1.05rem + 0.4vw, 1.3125rem); font-weight: 400; line-height: 1.55; color: var(--ink-2); }
+      .eyebrow { font-family: var(--font-mono); font-size: 0.8125rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--orange-deep); }
+
+      .eyebrow-rule { display:inline-flex; align-items:center; gap: 0.6rem; }
+      .eyebrow-rule::before { content:""; display:inline-block; width: 28px; height: 2px; background: var(--orange); }
+
+      .btn-primary { background: var(--orange); color: #fff; transition: background .2s ease, transform .2s ease; }
+      .btn-primary:hover { background: var(--orange-deep); transform: translateY(-1px); }
+      .btn-dark { background: var(--ink); color: #fff; transition: opacity .2s ease, transform .2s ease; }
+      .btn-dark:hover { opacity: .85; transform: translateY(-1px); }
+      .btn-outline { border: 1.5px solid #fff; color: #fff; transition: background .2s ease, color .2s ease; }
+      .btn-outline:hover { background: #fff; color: var(--ink); }
+      .btn-outline-dark { border: 1.5px solid var(--ink); color: var(--ink); transition: background .2s ease, color .2s ease; }
+      .btn-outline-dark:hover { background: var(--ink); color: #fff; }
+
+      .sunrise-dot {
+        background: radial-gradient(circle at 32% 30%, var(--yellow) 0%, var(--orange) 55%, var(--orange-deep) 100%);
+      }
+      .card-hover { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+      .card-hover:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -16px rgba(22,18,12,0.18); border-color: var(--orange); }
+      
+      /* Active tab styling */
+      .tab-btn.active { background-color: var(--orange); border-color: var(--orange); color: white; }
+    </style>
+  </head>
+  <body class="antialiased selection:bg-orange/20 selection:text-orange-deep">    <!-- ============ TOP STRIP ============ -->
+    <div class="bg-ink text-yellow text-xs border-b border-white/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 h-11 flex items-center justify-between font-mono tracking-wider">
+        <div class="flex items-center gap-3 sm:gap-4 mx-auto sm:mx-0">
+          <!-- Phone link: icon only on mobile, text on desktop -->
+          <a href="tel:12465381426" class="hover:text-white transition-colors flex items-center gap-1">
+            <iconify-icon icon="ph:phone-fill" class="text-sm sm:hidden"></iconify-icon>
+            <span class="sm:hidden">1-246-538-1426</span><span class="hidden sm:inline">P: 1-246-538-1426</span>
+          </a>
+          <span class="text-white/20">•</span>
+          <!-- Email link: icon only on mobile, text on desktop -->
+          <a href="mailto:hello@zephirinsbakery.bb" class="hover:text-white transition-colors flex items-center gap-1">
+            <iconify-icon icon="ph:envelope-simple-fill" class="text-sm sm:hidden"></iconify-icon>
+            <span class="hidden sm:inline">E: hello@zephirinsbakery.bb</span>
+          </a>
+        </div>
+        <div class="hidden sm:flex items-center gap-4 text-base">
+          <a href="https://www.instagram.com/zephirinsbakeries/" target="_blank" class="hover:text-white transition-colors flex items-center" aria-label="Instagram"><iconify-icon icon="ph:instagram-logo-bold"></iconify-icon></a>
+          <span class="text-white/20">•</span>
+          <a href="https://www.facebook.com/zephirinsbakeries/" target="_blank" class="hover:text-white transition-colors flex items-center" aria-label="Facebook"><iconify-icon icon="ph:facebook-logo-bold"></iconify-icon></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ 2. STICKY HEADER ============ -->
+    <header id="site-header" class="sticky top-0 z-50 bg-paper/95 backdrop-blur-md border-b border-ink/10 transition-all duration-300">
+      <!-- Top Row: Centered Logo -->
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex justify-center border-b border-ink/5">
+        <a href="index.html" class="flex items-center">
+          <img src="images/zephirin-bakeries-logo-transparent.png" alt="Zephirin's Bakery" class="h-[100px] w-auto" />
+        </a>
+      </div>
+      <!-- Bottom Row: Navigation and Controls -->
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+        <!-- Left: Hamburger List Icon (triggers Mobile/Sidebar Nav) -->
+        <button onclick="toggleMobileNav()" class="flex items-center justify-center w-10 h-10 -ml-2 text-ink hover:text-orange transition-colors cursor-pointer" aria-label="Toggle Navigation">
+          <iconify-icon icon="ph:list-bold" class="text-2xl"></iconify-icon>
+        </button>
+
+        <!-- Center: Centered Menu Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-[13px] font-bold uppercase tracking-wider text-ink-2">
+          <a href="index.html" class="hover:text-orange transition-colors">Home</a>
+          
+          <!-- Products Dropdown -->
+          <div class="relative group py-4">
+            <button class="text-orange relative pb-1 after:content-[''] after:absolute after:left-0 after:right-0 after:-bottom-[2px] after:h-[2px] after:bg-orange transition-colors flex items-center gap-1 font-bold uppercase tracking-wider cursor-pointer">
+              Products
+              <iconify-icon icon="ph:caret-down-bold" class="text-xs transition-transform duration-200 group-hover:rotate-180"></iconify-icon>
+            </button>
+            <div class="absolute left-0 mt-2 w-48 bg-paper border border-ink/10 rounded-2xl shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="bakery.html" class="block px-4 py-2.5 text-xs text-orange bg-cream transition-colors font-medium normal-case font-display">Bakery</a>
+              <a href="convenience.html" class="block px-4 py-2.5 text-xs text-ink hover:bg-cream hover:text-orange transition-colors font-medium normal-case font-display">Convenience Store</a>
+            </div>
+          </div>
+
+          <a href="recipes.html" class="hover:text-orange transition-colors">Recipes</a>
+          <a href="locator.html" class="hover:text-orange transition-colors">Where to Find Us</a>
+          <a href="about.html" class="hover:text-orange transition-colors">Heritage & Community</a>
+          <a href="feedback.html" class="hover:text-orange transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right: Curved CTA Button -->
+        <a href="contact.html" class="bg-orange hover:bg-orange-deep text-white transition-all duration-200 rounded-full px-6 py-2.5 text-xs font-bold uppercase tracking-wider shadow-sm">
+          Stock Zephirin's
+        </a>
+      </div>
+    </header>
+
+    <!-- ============ HERO BANNER ============ -->
+    <section class="relative bg-cream py-20 lg:py-28 overflow-hidden">
+      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full sunrise-dot opacity-20 blur-3xl"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 text-center relative z-10">
+        <p class="eyebrow mb-4">Bakery Products</p>
+        <h1 class="text-hero leading-tight text-ink">Baked fresh for the island, daily.</h1>
+        <p class="text-lead mt-5 max-w-2xl mx-auto text-ink-2">Explore our daily range of sandwich loaves, healthy breads, salt bread and buns, coconut bread, pastries and bread crumbs.</p>
+      </div>
+    </section>
+
+    <!-- ============ FILTERABLE PRODUCTS GRID ============ -->
+    <section class="py-24 bg-paper">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        
+        <!-- Filter Bar: Search and Category Tabs -->
+        <div class="mb-16">
+          <div class="relative max-w-md mx-auto mb-8">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-muted/60">
+              <iconify-icon icon="ph:magnifying-glass-bold" class="text-lg"></iconify-icon>
+            </span>
+            <input 
+              type="text" 
+              id="product-search" 
+              placeholder="Search bakery products..." 
+              oninput="handleSearchAndFilter()" 
+              class="w-full pl-11 pr-10 py-3.5 bg-paper border border-ink/10 rounded-full focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange text-sm font-mono transition-all duration-200 shadow-sm" 
+            />
+            <button 
+              id="clear-search-btn" 
+              onclick="clearSearch()" 
+              class="absolute inset-y-0 right-0 flex items-center pr-4 text-muted/60 hover:text-orange transition-colors hidden cursor-pointer"
+              aria-label="Clear search"
+            >
+              <iconify-icon icon="ph:x-bold" class="text-sm"></iconify-icon>
+            </button>
+          </div>
+
+          <!-- Tabbed Buttons -->
+          <div class="flex flex-wrap gap-3 justify-center font-mono text-sm">
+            <button onclick="filterProducts('all')" id="tab-all" class="tab-btn active border border-ink/10 px-6 py-2.5 rounded-full hover:bg-orange hover:border-orange hover:text-white transition-all duration-200 cursor-pointer">All Products</button>
+            <button onclick="filterProducts('bread')" id="tab-bread" class="tab-btn border border-ink/10 px-6 py-2.5 rounded-full hover:bg-orange hover:border-orange hover:text-white transition-all duration-200 cursor-pointer">Daily Breads</button>
+            <button onclick="filterProducts('rolls')" id="tab-rolls" class="tab-btn border border-ink/10 px-6 py-2.5 rounded-full hover:bg-orange hover:border-orange hover:text-white transition-all duration-200 cursor-pointer">Buns &amp; Rolls</button>
+            <button onclick="filterProducts('healthy')" id="tab-healthy" class="tab-btn border border-ink/10 px-6 py-2.5 rounded-full hover:bg-orange hover:border-orange hover:text-white transition-all duration-200 cursor-pointer">Healthy Options</button>
+            <button onclick="filterProducts('treats')" id="tab-treats" class="tab-btn border border-ink/10 px-6 py-2.5 rounded-full hover:bg-orange hover:border-orange hover:text-white transition-all duration-200 cursor-pointer">Teatime &amp; Treats</button>
+            <button onclick="filterProducts('pastries')" id="tab-pastries" class="tab-btn border border-ink/10 px-6 py-2.5 rounded-full hover:bg-orange hover:border-orange hover:text-white transition-all duration-200 cursor-pointer">Pastries</button>
+            <button onclick="filterProducts('pantry')" id="tab-pantry" class="tab-btn border border-ink/10 px-6 py-2.5 rounded-full hover:bg-orange hover:border-orange hover:text-white transition-all duration-200 cursor-pointer">Pantry</button>
+          </div>
+        </div>
+
+        <!-- Products Cards Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="products-grid">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INGREDIENTS / NUTRITION CALLOUT ============ -->
+    <section class="py-24 bg-ink text-white relative overflow-hidden">
+      <div class="absolute -top-32 -left-32 w-[350px] h-[350px] rounded-full sunrise-dot opacity-25 blur-3xl"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-2 gap-12 items-center relative z-10">
+        <div>
+          <p class="eyebrow text-yellow mb-4">Our standard</p>
+          <h2 class="text-h2 text-white leading-tight">No shortcuts. No fillers. Only raw quality.</h2>
+          <p class="text-lead mt-6 text-white/70">
+            Every bag of flour is sifted by hand. We use natural molasses, cane sugar, and real spices sourced locally from the fields of St. George and St. Philip.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-6 font-mono text-sm">
+          <div class="border border-white/10 p-6 rounded-2xl bg-white/5">
+            <span class="text-yellow text-3xl block mb-2"><iconify-icon icon="ph:plant-bold"></iconify-icon></span>
+            <p class="font-bold text-white uppercase tracking-wider text-xs">All Natural</p>
+            <p class="text-white/60 text-xs mt-2">Free from artificial preservatives or processing aids.</p>
+          </div>
+          <div class="border border-white/10 p-6 rounded-2xl bg-white/5">
+            <span class="text-yellow text-3xl block mb-2"><iconify-icon icon="ph:hourglass-bold"></iconify-icon></span>
+            <p class="font-bold text-white uppercase tracking-wider text-xs">Slow Proved</p>
+            <p class="text-white/60 text-xs mt-2">Fermented slowly for texture and digestible sugars.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-ink text-white border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-20 pb-10">
+        <div class="grid md:grid-cols-12 gap-12">
+          
+          <div class="md:col-span-5">
+            <a href="#" class="flex items-center mb-6">
+              <img src="images/zephirin-bakeries-logo-white-text.png" alt="Zephirin's Bakery" class="h-[94px] w-auto" />
+            </a>
+            <p class="text-white/60 max-w-xs leading-relaxed text-[15px]">
+              Barbados' bakery since 1923 — fresh bread baked before sunrise and delivered to every parish on the island.
+            </p>
+            <div class="flex items-center gap-4 mt-8">
+              <a href="https://www.instagram.com/zephirinsbakeries/" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-orange hover:text-white transition-colors" aria-label="Instagram"><iconify-icon icon="ph:instagram-logo-bold"></iconify-icon></a>
+              <a href="https://www.facebook.com/zephirinsbakeries/" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-orange hover:text-white transition-colors" aria-label="Facebook"><iconify-icon icon="ph:facebook-logo-bold"></iconify-icon></a>
+            </div>
+          </div>
+
+          <div class="md:col-span-2">
+            <p class="eyebrow mb-5" style="color: var(--yellow);">Explore</p>
+            <ul class="space-y-3 text-white/60 text-sm font-medium">
+              <li><a href="bakery.html" class="hover:text-white transition-colors font-normal">Bakery Products</a></li>
+              <li><a href="convenience.html" class="hover:text-white transition-colors font-normal">Convenience Store</a></li>
+              <li><a href="recipes.html" class="hover:text-white transition-colors font-normal">Recipes</a></li>
+              <li><a href="locator.html" class="hover:text-white transition-colors font-normal">Locator</a></li>
+              <li><a href="about.html" class="hover:text-white transition-colors font-normal">Heritage & Community</a></li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-2">
+            <p class="eyebrow mb-5" style="color: var(--yellow);">Company</p>
+            <ul class="space-y-3 text-white/60 text-sm font-medium">
+              <li><a href="about.html" class="hover:text-white transition-colors font-normal">Heritage</a></li>
+              <li><a href="vacancies.html" class="hover:text-white transition-colors font-normal">Careers &amp; Vacancies</a></li>
+              <li><a href="#" class="hover:text-white transition-colors font-normal">Privacy policy</a></li>
+              <li><a href="feedback.html" class="hover:text-white transition-colors font-normal">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-3">
+            <p class="eyebrow mb-5" style="color: var(--yellow);">Headquarters</p>
+            <p class="text-white/60 leading-relaxed font-mono text-sm mb-4">
+              Tudor Bridge<br/>Bridgetown, Saint Michael<br/>Barbados
+            </p>
+            <div class="w-full h-32 border border-white/10 rounded-xl overflow-hidden opacity-85 hover:opacity-100 transition-opacity">
+              <iframe 
+                src="https://maps.google.com/maps?q=Tudor%20Bridge,%20Bridgetown,%20Saint%20Michael,%20Barbados&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-full border-0 filter invert-[0.9] hue-rotate-[180deg]" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-white/40 font-mono">
+          <p>Zephirin's Bakery · © 1923–2026. All rights reserved.</p>
+          <p class="flex items-center gap-2">
+            <iconify-icon icon="ph:sparkle-fill" class="text-yellow"></iconify-icon>
+            As fresh as the morning sunrise
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ FAQS & PRODUCTS SCRIPTS ============ -->
+    <script src="js/bakery-products.js"></script>
+    <script>
+
+      let currentFilterCategory = 'all';
+
+      // Render products grid dynamically
+      function renderProducts() {
+        const grid = document.getElementById('products-grid');
+        const searchQuery = document.getElementById('product-search').value.toLowerCase().trim();
+        grid.innerHTML = '';
+
+        let filteredCount = 0;
+
+        productsData.forEach((product, index) => {
+          // Check category tab match
+          const matchesCategory = (
+            currentFilterCategory === 'all' || 
+            (currentFilterCategory === 'healthy' && product.healthy) ||
+            product.category === currentFilterCategory
+          );
+          
+          // Check search match
+          const matchesSearch = !searchQuery || 
+            product.title.toLowerCase().includes(searchQuery) ||
+            product.description.toLowerCase().includes(searchQuery) ||
+            product.categoryLabel.toLowerCase().includes(searchQuery) ||
+            product.ingredients.toLowerCase().includes(searchQuery);
+
+          if (matchesCategory && matchesSearch) {
+            filteredCount++;
+            
+            const card = document.createElement('a');
+            card.href = productUrl(product);
+            card.className = "product-item group relative bg-transparent rounded-3xl overflow-hidden flex flex-col justify-between p-4 transition-all duration-300 hover:shadow-lg";
+            card.innerHTML = `
+              <div>
+                <!-- Padded transparent box with object-contain to show packaging and shadow correctly -->
+                <div class="aspect-square w-full overflow-hidden bg-transparent rounded-2xl relative p-4 flex items-center justify-center">
+                  <img src="${productImageSrc(product)}" onerror="useProductFallback(this, productsData[${index}])" alt="Zephirin's ${product.title}" class="max-w-full max-h-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-105" />
+                  
+                  <!-- WooCommerce Hover Overlay -->
+                  <div class="absolute inset-0 bg-ink/65 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                    <span class="border border-white hover:bg-white hover:text-ink text-white font-bold font-mono tracking-widest text-[11px] uppercase py-3 px-6 transition-all duration-200 cursor-pointer rounded-full">
+                      View Product
+                    </span>
+                  </div>
+                </div>
+                
+                <div class="pt-5 pb-2">
+                  <span class="font-mono text-[10px] tracking-widest text-orange-deep uppercase block mb-1">${product.categoryLabel}</span>
+                  <h3 class="font-bold text-lg text-ink group-hover:text-orange transition-colors duration-200 font-display">
+                    ${product.title}
+                  </h3>
+                  <p class="text-sm text-ink-2 mt-2 leading-relaxed line-clamp-2">${product.description}</p>
+                </div>
+              </div>
+              
+              <div class="pt-2 pb-1 border-t border-ink/5 mt-4 flex items-center justify-between">
+                <span class="text-[10px] font-mono font-bold text-orange hover:text-orange-deep hover:underline tracking-widest uppercase transition-colors duration-200 cursor-pointer inline-flex items-center gap-1">
+                  View Product <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon>
+                </span>
+                <span class="text-[9px] font-mono text-muted uppercase tracking-wider">${product.pack}</span>
+              </div>
+            `;
+            grid.appendChild(card);
+          }
+        });
+
+        // Toggle clear search button visibility
+        const clearBtn = document.getElementById('clear-search-btn');
+        if (searchQuery) {
+          clearBtn.classList.remove('hidden');
+        } else {
+          clearBtn.classList.add('hidden');
+        }
+
+        // Show "No products found" if none match
+        if (filteredCount === 0) {
+          grid.innerHTML = `
+            <div class="col-span-full py-16 text-center">
+              <span class="text-4xl text-muted/40 block mb-4"><iconify-icon icon="ph:egg-crack-bold"></iconify-icon></span>
+              <h4 class="font-bold text-lg text-ink font-display">No products found</h4>
+              <p class="text-sm text-muted mt-2 max-w-sm mx-auto font-sans leading-relaxed">We couldn't find anything matching "${searchQuery}" in this category. Try adjusting your search query or filters.</p>
+              <button onclick="clearFilters()" class="mt-6 border border-orange text-orange hover:bg-orange hover:text-white px-5 py-2.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider transition-all cursor-pointer">
+                Reset all filters
+              </button>
+            </div>
+          `;
+        }
+      }
+
+      function handleSearchAndFilter() {
+        renderProducts();
+      }
+
+      function filterProducts(category) {
+        currentFilterCategory = category;
+        
+        // Toggle tab button active classes
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        document.getElementById('tab-' + category).classList.add('active');
+
+        renderProducts();
+      }
+
+      // Clear search query
+      function clearSearch() {
+        document.getElementById('product-search').value = '';
+        renderProducts();
+      }
+
+      // Clear search query and reset category tab
+      function clearFilters() {
+        document.getElementById('product-search').value = '';
+        filterProducts('all');
+      }
+
+
+      // Mobile nav drawer toggle
+      function toggleMobileNav() {
+        const drawer = document.getElementById('mobile-nav-drawer');
+        const backdrop = document.getElementById('mobile-nav-backdrop');
+        if (drawer.classList.contains('-translate-x-full')) {
+          drawer.classList.remove('-translate-x-full');
+          backdrop.classList.remove('opacity-0', 'pointer-events-none');
+          backdrop.classList.add('opacity-100', 'pointer-events-auto');
+        } else {
+          drawer.classList.add('-translate-x-full');
+          backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+          backdrop.classList.add('opacity-0', 'pointer-events-none');
+        }
+      }
+
+      // Floating store info widget toggle
+      function toggleStoreInfo() {
+        const card = document.getElementById('store-info-card');
+        if (card.classList.contains('hidden')) {
+          card.classList.remove('hidden');
+          card.offsetHeight; // trigger reflow
+          card.classList.remove('opacity-0', 'scale-95');
+          card.classList.add('opacity-100', 'scale-100');
+        } else {
+          card.classList.remove('opacity-100', 'scale-100');
+          card.classList.add('opacity-0', 'scale-95');
+          setTimeout(() => {
+            card.classList.add('hidden');
+          }, 300);
+        }
+      }
+
+      // Initial render on page load
+      // bakery.html?category=pastries opens that tab (used by the product page breadcrumb)
+      window.addEventListener('DOMContentLoaded', () => {
+        const category = new URLSearchParams(location.search).get('category');
+        if (category && document.getElementById('tab-' + category)) {
+          filterProducts(category);
+        } else {
+          renderProducts();
+        }
+      });
+    </script>
+
+    <!-- ============ MOBILE NAVIGATION DRAWER (Slide from Left) ============ -->
+    <div id="mobile-nav-drawer" class="fixed inset-y-0 left-0 z-50 w-full max-w-sm bg-ink text-white transform -translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col justify-between p-8 overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between mb-8 pb-6 border-b border-white/10">
+          <a href="index.html" class="flex items-center">
+            <img src="images/zephirin-bakeries-logo-white-text.png" alt="Zephirin's Bakery" class="h-10 w-auto" />
+          </a>
+          <button onclick="toggleMobileNav()" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 text-white transition-colors cursor-pointer" aria-label="Close menu">
+            <iconify-icon icon="ph:x-bold" class="text-xl"></iconify-icon>
+          </button>
+        </div>
+
+        <!-- Navigation Links (Mobile Only) -->
+        <nav class="flex flex-col gap-5 text-lg font-bold uppercase tracking-wider font-display lg:hidden mb-8">
+          <a href="index.html" class="hover:text-yellow transition-colors">Home</a>
+          <div class="space-y-2">
+            <span class="text-white/40 text-xs font-mono tracking-widest block uppercase">Products</span>
+            <div class="pl-4 flex flex-col gap-3 border-l border-white/10">
+              <a href="bakery.html" class="text-white hover:text-yellow transition-colors text-base font-semibold">Bakery</a>
+              <a href="convenience.html" class="text-white hover:text-yellow transition-colors text-base">Convenience Store</a>
+            </div>
+          </div>
+          <a href="recipes.html" class="hover:text-yellow transition-colors">Recipes</a>
+          <a href="locator.html" class="hover:text-yellow transition-colors">Find Us</a>
+          <a href="about.html" class="hover:text-yellow transition-colors">Heritage & Community</a>
+          <a href="feedback.html" class="hover:text-yellow transition-colors">Contact</a>
+        </nav>
+
+        <!-- Convenience Store Information Section (Always Visible) -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-2">
+            <iconify-icon icon="ph:storefront-bold" class="text-yellow text-2xl"></iconify-icon>
+            <h3 class="font-display font-bold text-lg text-white">Zephirin's Convenience Store</h3>
+          </div>
+          <p class="text-xs text-white/60 leading-relaxed font-mono">
+            Located right next to our Bridgetown ovens. Drop in for daily essentials, cold drinks, and hot baked bread straight from the kitchen.
+          </p>
+          
+          <!-- Opening Hours Card -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-5 space-y-3 font-mono text-xs">
+            <p class="text-yellow font-bold uppercase tracking-widest text-[10px] mb-2 flex items-center gap-1.5">
+              <iconify-icon icon="ph:clock-bold" class="text-sm"></iconify-icon>
+              Opening Hours
+            </p>
+            <div class="flex justify-between">
+              <span class="text-white/60">Open Daily</span>
+              <span class="text-white font-semibold">6:30 AM - 9:00 PM</span>
+            </div>
+          </div>
+
+          <!-- Location Detail -->
+          <div class="flex items-start gap-2.5 text-xs text-white/70 font-mono">
+            <iconify-icon icon="ph:map-pin-bold" class="text-yellow text-lg mt-0.5"></iconify-icon>
+            <div>
+              <p class="font-bold text-white">Address</p>
+              <p class="mt-0.5">Tudor Bridge, Bridgetown</p>
+              <p>Saint Michael, Barbados</p>
+            </div>
+          </div>
+          
+          <a href="convenience.html" class="block w-full bg-orange hover:bg-orange-deep text-white text-center py-3 rounded-xl font-bold uppercase tracking-wider text-xs transition-all duration-200">
+            Visit Store Page
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 mt-8 space-y-4">
+        <a href="contact.html" class="bg-orange hover:bg-orange-deep text-white block text-center py-3.5 font-bold uppercase tracking-wider text-xs transition-all duration-200 rounded-full">
+          Stock Zephirin's
+        </a>
+        <div class="space-y-2 text-xs text-white/50 font-mono">
+          <p>P: 1-246-538-1426</p>
+          <p>E: hello@zephirinsbakery.bb</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backdrop for drawer -->
+    <div id="mobile-nav-backdrop" class="fixed inset-0 z-40 bg-ink/50 opacity-0 pointer-events-none transition-opacity duration-300" onclick="toggleMobileNav()"></div>
+
+    <!-- ============ FLOATING STORE INFO WIDGET ============ -->
+    <div class="fixed bottom-6 right-6 z-40 font-mono">
+      <!-- Expanded Card (Hidden by default, toggled via JS) -->
+      <div id="store-info-card" class="hidden absolute bottom-16 right-0 w-80 bg-ink text-white rounded-3xl p-6 shadow-2xl border border-white/10 transition-all duration-300 opacity-0 scale-95 origin-bottom-right">
+        <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <iconify-icon icon="ph:storefront-bold" class="text-yellow text-xl"></iconify-icon>
+            <span class="font-display font-bold text-sm tracking-wide">Convenience Store</span>
+          </div>
+          <button onclick="toggleStoreInfo()" class="text-white/60 hover:text-white transition-colors cursor-pointer" aria-label="Close card">
+            <iconify-icon icon="ph:x-bold" class="text-sm"></iconify-icon>
+          </button>
+        </div>
+        
+        <p class="text-xs text-white/70 mb-4 leading-relaxed">
+          Call us directly during opening hours to place orders, check fresh bread drops, or verify stock.
+        </p>
+
+        <!-- Hours -->
+        <div class="space-y-2 text-xs border-b border-white/5 pb-4 mb-4">
+          <div class="flex justify-between">
+            <span class="text-white/50">Open Daily</span>
+            <span class="font-semibold text-white">6:30 AM - 9:00 PM</span>
+          </div>
+        </div>
+
+        <!-- Call & WhatsApp Actions -->
+        <div class="space-y-2">
+          <a href="tel:12465381426" class="flex items-center justify-center gap-2 bg-orange hover:bg-orange-deep text-white rounded-full py-3 text-xs font-bold uppercase tracking-wider transition-colors duration-200">
+            <iconify-icon icon="ph:phone-call-bold" class="text-sm"></iconify-icon>
+            Call: 1-246-538-1426
+          </a>
+          <a href="https://wa.me/12465381426" target="_blank" class="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full py-3 text-xs font-bold uppercase tracking-wider transition-colors duration-200">
+            <iconify-icon icon="ph:whatsapp-logo-bold" class="text-base"></iconify-icon>
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Trigger Button -->
+      <button onclick="toggleStoreInfo()" class="flex items-center gap-2.5 bg-ink text-white hover:bg-ink-2 px-5 py-3 rounded-full border border-white/15 shadow-xl transition-all duration-200 group cursor-pointer hover:scale-105 active:scale-95" aria-label="View Store Info">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-yellow"></span>
+        </span>
+        <iconify-icon icon="ph:phone-call-bold" class="text-sm text-yellow group-hover:rotate-12 transition-transform"></iconify-icon>
+        <span class="text-xs font-bold uppercase tracking-wider font-display">Store Info</span>
+      </button>
+    </div>
+  </body>
+</html>
