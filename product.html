@@ -365,15 +365,29 @@
           img.style.transform = '';
           box.classList.replace('cursor-zoom-out', 'cursor-zoom-in');
           hint.classList.remove('opacity-0');
+          box.style.touchAction = '';
           zoomed = false;
         };
 
-        box.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') zoomIn(e); });
+        // iOS Safari reports a tap's click event as pointerType "mouse", so remember the
+        // type from pointerdown instead, and only hover-zoom on devices that can hover.
+        const canHover = window.matchMedia('(hover: hover)').matches;
+        const isHoverMouse = (type) => canHover && type === 'mouse';
+        let lastPointerType = '';
+
+        box.addEventListener('pointerdown', e => { lastPointerType = e.pointerType; });
+        box.addEventListener('pointerenter', e => { if (isHoverMouse(e.pointerType)) zoomIn(e); });
         box.addEventListener('pointermove', e => { if (zoomed) focusAt(e); });
-        box.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') zoomOut(); });
+        box.addEventListener('pointerleave', e => { if (isHoverMouse(e.pointerType)) zoomOut(); });
         box.addEventListener('click', e => {
-          if (e.pointerType === 'mouse') return;
-          zoomed ? zoomOut() : zoomIn(e);
+          if (isHoverMouse(lastPointerType || e.pointerType)) return;
+          if (zoomed) {
+            zoomOut();
+          } else {
+            zoomIn(e);
+            // While zoomed, dragging a finger pans the image instead of scrolling the page
+            box.style.touchAction = 'none';
+          }
         });
         return zoomOut;
       }
