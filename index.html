@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Zephirin's Bakery | Fresh Bread Baked in Barbados Since 1923</title>
     <meta name="description" content="Barbados' family bakery since 1923. Sliced sandwich loaves, salt bread, burger buns, coconut bread and pastries, baked fresh and delivered island-wide." />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -20,10 +20,11 @@
     <meta name="twitter:title" content="Zephirin's Bakery | Fresh Bread Baked in Barbados Since 1923" />
     <meta name="twitter:description" content="Barbados' family bakery since 1923. Sliced sandwich loaves, salt bread, burger buns, coconut bread and pastries, baked fresh and delivered island-wide." />
     <meta name="twitter:image" content="https://zephirinsbakery.com/images/hero_breakfast_scene.jpg" />
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Bakery", "@id": "https://zephirinsbakery.com/#bakery", "name": "Zephirin's Bakeries Inc", "alternateName": "Zephirin's Bakery", "url": "https://zephirinsbakery.com/", "logo": "https://zephirinsbakery.com/images/zephirin-bakeries-logo.png", "image": "https://zephirinsbakery.com/images/zephirins_factory_exterior.jpg", "description": "Barbadian family bakery baking sliced bread, salt bread, buns, coconut bread and pastries since 1923.", "foundingDate": "1923", "telephone": "+1-246-538-1426", "email": "hello@zephirinsbakery.bb", "address": {"@type": "PostalAddress", "streetAddress": "Tudor Bridge", "addressLocality": "Bridgetown", "addressRegion": "Saint Michael", "addressCountry": "BB"}, "areaServed": "Barbados", "sameAs": ["https://www.instagram.com/zephirinsbakeries/", "https://www.facebook.com/zephirinsbakeries/"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Bakery", "@id": "https://zephirinsbakery.com/#bakery", "name": "Zephirin's Bakeries Inc", "alternateName": "Zephirin's Bakery", "url": "https://zephirinsbakery.com/", "logo": "https://zephirinsbakery.com/images/zephirin-bakeries-logo.png", "image": "https://zephirinsbakery.com/images/zephirins_factory_exterior.jpg", "description": "Barbadian family bakery baking sliced bread, salt bread, buns, coconut bread and pastries since 1923.", "foundingDate": "1923", "telephone": "+1-246-538-1426", "email": "Orders@zephirinsbakeries.com", "address": {"@type": "PostalAddress", "streetAddress": "Tudor Bridge", "addressLocality": "Bridgetown", "addressRegion": "Saint Michael", "addressCountry": "BB"}, "areaServed": "Barbados", "sameAs": ["https://www.instagram.com/zephirinsbakeries/", "https://www.facebook.com/zephirinsbakeries/"]}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Mulish:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <style type="text/tailwindcss">
@@ -165,19 +166,19 @@
   <body class="antialiased selection:bg-orange/20 selection:text-orange-deep">
 
     <!-- ============ 1. TOP STRIP (Top Bar) ============ -->
-    <div class="bg-ink text-yellow text-xs border-b border-white/5">
+    <div class="top-strip bg-ink text-yellow text-xs border-b border-white/5">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 h-11 flex items-center justify-between font-mono tracking-wider">
         <div class="flex items-center gap-3 sm:gap-4 mx-auto sm:mx-0">
           <!-- Phone link: icon only on mobile, text on desktop -->
-          <a href="tel:12465381426" class="hover:text-white transition-colors flex items-center gap-1">
+          <a href="tel:+12465381426" class="hover:text-white transition-colors flex items-center gap-1">
             <iconify-icon icon="ph:phone-fill" class="text-sm sm:hidden"></iconify-icon>
             <span class="sm:hidden">1-246-538-1426</span><span class="hidden sm:inline">P: 1-246-538-1426</span>
           </a>
           <span class="text-white/20">•</span>
           <!-- Email link: icon only on mobile, text on desktop -->
-          <a href="mailto:hello@zephirinsbakery.bb" class="hover:text-white transition-colors flex items-center gap-1">
+          <a href="mailto:Orders@zephirinsbakeries.com" class="hover:text-white transition-colors flex items-center gap-1">
             <iconify-icon icon="ph:envelope-simple-fill" class="text-sm sm:hidden"></iconify-icon>
-            <span class="hidden sm:inline">E: hello@zephirinsbakery.bb</span>
+            <span class="hidden sm:inline">E: Orders@zephirinsbakeries.com</span>
           </a>
         </div>
         <div class="hidden sm:flex items-center gap-4 text-base">
@@ -193,7 +194,7 @@
       <!-- Top Row: Centered Logo (Desktop only) -->
       <div class="hidden lg:flex max-w-7xl mx-auto px-6 lg:px-10 py-5 justify-center border-b border-ink/5">
         <a href="index.html" class="flex items-center">
-          <img src="images/zephirin-bakeries-logo-transparent.png" alt="Zephirin's Bakery" class="h-[100px] w-auto" />
+          <img width="476" height="240" src="images/zephirin-bakeries-logo-transparent.webp" alt="Zephirin's Bakery" class="h-[100px] w-auto" />
         </a>
       </div>
       <!-- Bottom Row: Navigation and Controls (Single Row on Mobile, Double on Desktop) -->
@@ -206,7 +207,7 @@
         <!-- Mobile-only Centered Logo -->
         <div class="lg:hidden flex items-center justify-center absolute left-1/2 -translate-x-1/2">
           <a href="index.html">
-            <img src="images/zephirin-bakeries-logo-transparent.png" alt="Zephirin's Bakery" class="h-14 w-auto" />
+            <img width="476" height="240" src="images/zephirin-bakeries-logo-transparent.webp" alt="Zephirin's Bakery" class="h-14 w-auto" />
           </a>
         </div>
 
@@ -242,14 +243,15 @@
     </header>
 
     <!-- ============ 3. HERO SLIDER ============ -->
-    <section class="relative overflow-hidden w-full h-[85vh] sm:h-[80vh] lg:h-[90vh] bg-ink">
+    <!-- svh units: stays put when the mobile browser bar collapses (vh jumps) -->
+    <section id="hero" class="relative overflow-hidden w-full h-[85svh] min-h-[600px] sm:h-[80svh] lg:h-[90vh] lg:min-h-0 bg-ink" aria-roledescription="carousel" aria-label="Featured">
       <!-- Slides Container -->
       <div id="hero-slider" class="relative w-full h-full">
         <!-- Slide 1 -->
         <div class="slide active absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out flex flex-col lg:flex-row">
           <!-- Left Column: Image -->
           <div class="w-full lg:w-1/2 h-[45%] lg:h-full relative overflow-hidden">
-            <div class="absolute inset-0 bg-cover bg-center transition-all duration-[10000ms] ease-out scale-100 bg-image" style="background-image: url('images/hero_breakfast_scene.jpg');"></div>
+            <div class="absolute inset-0 bg-cover bg-center transition-all duration-[10000ms] ease-out scale-100 bg-image" style="background-image: url('images/hero_breakfast_scene.webp');"></div>
             <div class="absolute inset-0 bg-black/30 lg:hidden"></div>
           </div>
           <!-- Right Column: Content -->
@@ -274,7 +276,7 @@
         <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out flex flex-col lg:flex-row">
           <!-- Left Column: Image -->
           <div class="w-full lg:w-1/2 h-[45%] lg:h-full relative overflow-hidden">
-            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover transition-all duration-[10000ms] ease-out scale-100 bg-image">
+            <video loop muted playsinline preload="none" poster="images/smooth_transiton_poster.webp" class="absolute inset-0 w-full h-full object-cover transition-all duration-[10000ms] ease-out scale-100 bg-image">
               <source src="images/smooth_transiton_202606120450.mp4" type="video/mp4" />
             </video>
             <div class="absolute inset-0 bg-black/30 lg:hidden"></div>
@@ -283,7 +285,7 @@
           <div class="w-full lg:w-1/2 h-[55%] lg:h-full bg-cream flex flex-col justify-center items-center lg:items-start text-center lg:text-left px-6 sm:px-12 lg:px-16 xl:px-24 py-8 lg:py-16 text-ink relative">
             <div class="w-full max-w-xl lg:border lg:border-yellow/30 lg:p-10 xl:p-14 lg:rounded-[2.5rem] lg:bg-paper/40 lg:backdrop-blur-sm lg:shadow-sm">
               <p class="eyebrow mb-2 lg:mb-5 text-orange eyebrow-rule">PROVEN BY TIME · BAKED DAILY</p>
-              <h1 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-display font-medium leading-[1.15] text-ink mb-3 lg:mb-5">Proven by time, <span class="italic font-light text-yellow">baked</span> with care.</h1>
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-display font-medium leading-[1.15] text-ink mb-3 lg:mb-5">Proven by time, <span class="italic font-light text-yellow">baked</span> with care.</h2>
               <p class="text-xs sm:text-sm lg:text-base text-ink-2/90 font-light leading-relaxed mb-5 lg:mb-8 max-w-md">From the first proof to the last golden-brown loaf out the door — every batch gets our full attention before the island wakes.</p>
               <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 w-full max-w-xs lg:max-w-none mx-auto lg:mx-0">
                 <a href="contact.html" class="w-full sm:w-auto text-center bg-orange hover:bg-orange-deep text-white font-mono uppercase tracking-wider text-[10px] lg:text-xs font-semibold px-6 lg:px-8 py-3 lg:py-3.5 rounded-full transition-all duration-300 shadow-md">
@@ -301,14 +303,14 @@
         <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out flex flex-col lg:flex-row">
           <!-- Left Column: Image -->
           <div class="w-full lg:w-1/2 h-[45%] lg:h-full relative overflow-hidden">
-            <div class="absolute inset-0 bg-cover bg-center transition-all duration-[10000ms] ease-out scale-100 bg-image" style="background-image: url('images/hero_sweet_bread_breakfast.png');"></div>
+            <div class="absolute inset-0 bg-cover bg-center transition-all duration-[10000ms] ease-out scale-100 bg-image" style="background-image: url('images/hero_sweet_bread_breakfast.webp');"></div>
             <div class="absolute inset-0 bg-black/30 lg:hidden"></div>
           </div>
           <!-- Right Column: Content -->
           <div class="w-full lg:w-1/2 h-[55%] lg:h-full bg-cream flex flex-col justify-center items-center lg:items-start text-center lg:text-left px-6 sm:px-12 lg:px-16 xl:px-24 py-8 lg:py-16 text-ink relative">
             <div class="w-full max-w-xl lg:border lg:border-yellow/30 lg:p-10 xl:p-14 lg:rounded-[2.5rem] lg:bg-paper/40 lg:backdrop-blur-sm lg:shadow-sm">
               <p class="eyebrow mb-2 lg:mb-5 text-orange eyebrow-rule">TRADITIONAL BAJAN TREATS</p>
-              <h1 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-display font-medium leading-[1.15] text-ink mb-3 lg:mb-5">Savor the sweetness of <span class="italic font-light text-yellow">island life</span>.</h1>
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-display font-medium leading-[1.15] text-ink mb-3 lg:mb-5">Savor the sweetness of <span class="italic font-light text-yellow">island life</span>.</h2>
               <p class="text-xs sm:text-sm lg:text-base text-ink-2/90 font-light leading-relaxed mb-5 lg:mb-8 max-w-md">From classic coconut sweet bread to fresh turnovers and pastries, we bake Bajan morning traditions fresh daily.</p>
               <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 w-full max-w-xs lg:max-w-none mx-auto lg:mx-0">
                 <a href="bakery.html" class="w-full sm:w-auto text-center bg-orange hover:bg-orange-deep text-white font-mono uppercase tracking-wider text-[10px] lg:text-xs font-semibold px-6 lg:px-8 py-3 lg:py-3.5 rounded-full transition-all duration-300 shadow-md">
@@ -343,22 +345,22 @@
     <section class="bg-ink text-white py-6 border-b border-white/5 relative z-20">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 text-sm font-mono tracking-wide">
         <div>
-          <div class="flex items-center gap-2.5">
+          <a href="mailto:Orders@zephirinsbakeries.com" class="flex items-center gap-2.5 min-h-11 hover:text-yellow transition-colors">
             <iconify-icon icon="ph:envelope-simple-bold" class="text-yellow text-lg"></iconify-icon>
-            <span>hello@zephirinsbakery.bb</span>
-          </div>
+            <span>Orders@zephirinsbakeries.com</span>
+          </a>
         </div>
         <div>
-          <div class="flex items-center gap-2.5 md:justify-center">
+          <a href="tel:+12465381426" class="flex items-center gap-2.5 min-h-11 md:justify-center hover:text-yellow transition-colors">
             <iconify-icon icon="ph:phone-bold" class="text-yellow text-lg"></iconify-icon>
             <span>1-246-538-1426</span>
-          </div>
+          </a>
         </div>
         <div>
-          <div class="flex items-center gap-2.5 md:justify-end">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Zephirin%27s+Bakeries,+Tudor+Bridge,+Bridgetown,+Barbados" target="_blank" rel="noopener" class="flex items-center gap-2.5 min-h-11 md:justify-end hover:text-yellow transition-colors">
             <iconify-icon icon="ph:map-pin-bold" class="text-yellow text-lg"></iconify-icon>
             <span>Tudor Bridge, Bridgetown, Saint Michael Barbados</span>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -366,23 +368,23 @@
     <!-- ============ 5. "WHO WE ARE" / ABOUT SECTION ============ -->
     <section id="about" class="relative overflow-hidden py-24 lg:py-32 bg-paper">
       <!-- Left Side Faint Sketch of Bread -->
-      <div class="absolute left-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
-        <img src="images/sketch_bread_left.png" alt="" class="w-full h-auto" />
+      <div aria-hidden="true" class="hidden md:block absolute left-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
+        <img width="1024" height="1024" srcset="images/sketch_bread_left-600.webp 600w, images/sketch_bread_left.webp 1024w" sizes="(max-width: 768px) 100vw, 50vw" loading="lazy" decoding="async" src="images/sketch_bread_left.webp" alt="" class="w-full h-auto" />
       </div>
       <!-- Right Side Faint Sketch of Pretzel -->
-      <div class="absolute right-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
-        <img src="images/sketch_pretzel_right.png" alt="" class="w-full h-auto" />
+      <div aria-hidden="true" class="hidden md:block absolute right-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
+        <img width="1024" height="1024" srcset="images/sketch_pretzel_right-600.webp 600w, images/sketch_pretzel_right.webp 1024w" sizes="(max-width: 768px) 100vw, 50vw" loading="lazy" decoding="async" src="images/sketch_pretzel_right.webp" alt="" class="w-full h-auto" />
       </div>
       <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center relative z-10">
         <!-- Overlapping Image Collage -->
         <div class="relative flex items-center justify-center w-full min-h-[460px] md:min-h-[520px]">
           <!-- Large vertical Main image -->
           <div class="absolute left-0 top-0 w-[55%] aspect-[3/4] rounded-3xl overflow-hidden shadow-xl border border-ink/5 z-10 transition-transform duration-500 hover:scale-[1.02]">
-            <img src="images/zephirins_shelf_products.jpg" alt="Zephirin's bread products on shelves" class="w-full h-full object-cover" />
+            <img width="768" height="1024" srcset="images/zephirins_shelf_products-600.webp 600w, images/zephirins_shelf_products.webp 768w" sizes="(max-width: 768px) 100vw, 50vw" loading="lazy" decoding="async" src="images/zephirins_shelf_products.webp" alt="Zephirin's bread products on shelves" class="w-full h-full object-cover" />
           </div>
           <!-- Offset horizontal image -->
           <div class="absolute right-0 bottom-0 w-[60%] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-paper z-20 transition-transform duration-500 hover:scale-[1.02]">
-            <img src="images/zephirins_factory_exterior_highres.png" alt="Zephirin's Bakery building exterior" class="w-full h-full object-cover" />
+            <img width="1024" height="1024" srcset="images/zephirins_factory_exterior_highres-600.webp 600w, images/zephirins_factory_exterior_highres.webp 1024w" sizes="(max-width: 768px) 100vw, 50vw" loading="lazy" decoding="async" src="images/zephirins_factory_exterior_highres.webp" alt="Zephirin's Bakery building exterior" class="w-full h-full object-cover" />
           </div>
           <!-- Decorative Background Glow -->
           <div class="absolute top-[20%] right-[30%] w-36 h-36 rounded-full sunrise-dot opacity-30 blur-2xl z-0"></div>
@@ -440,42 +442,42 @@
     <!-- ============ 6. HORIZONTAL BANNERS (4 stacked rows) ============ -->
     <section class="w-full flex flex-col border-t border-b border-ink/10 bg-paper">
       <!-- Row 1 -->
-      <a href="#about" class="group relative block w-full overflow-hidden border-b border-ink/10">
-        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/salt_bread.png');"></div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-16 relative z-10 flex items-center justify-between text-white">
+      <a href="bakery.html?category=bread" class="group relative block w-full overflow-hidden border-b border-ink/10">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/salt_bread.webp');"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-16 relative z-10 flex items-center justify-between gap-4 text-white">
           <div>
             <p class="font-mono text-xs text-yellow tracking-widest uppercase mb-1">01 — Daily Breads</p>
             <h3 class="text-h3 font-display transition-colors group-hover:text-yellow">Salt bread, coconut bread &amp; whole wheat</h3>
           </div>
-          <span class="w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
+          <span class="shrink-0 w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
             <iconify-icon icon="ph:arrow-right-bold" class="text-xl"></iconify-icon>
           </span>
         </div>
       </a>
 
       <!-- Row 2 -->
-      <a href="#about" class="group relative block w-full overflow-hidden border-b border-ink/10">
-        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/hamburger_buns_1777241720309.png');"></div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-16 relative z-10 flex items-center justify-between text-white">
+      <a href="bakery.html?category=rolls" class="group relative block w-full overflow-hidden border-b border-ink/10">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/hamburger_buns_1777241720309.webp');"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-16 relative z-10 flex items-center justify-between gap-4 text-white">
           <div>
             <p class="font-mono text-xs text-yellow tracking-widest uppercase mb-1">02 — Buns &amp; Rolls</p>
             <h3 class="text-h3 font-display transition-colors group-hover:text-yellow">Burger buns, dinner rolls &amp; sweet buns</h3>
           </div>
-          <span class="w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
+          <span class="shrink-0 w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
             <iconify-icon icon="ph:arrow-right-bold" class="text-xl"></iconify-icon>
           </span>
         </div>
       </a>
 
       <!-- Row 3 -->
-      <a href="#about" class="group relative block w-full overflow-hidden border-b border-ink/10">
-        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/raisin_bread.png');"></div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-16 relative z-10 flex items-center justify-between text-white">
+      <a href="bakery.html?category=treats" class="group relative block w-full overflow-hidden border-b border-ink/10">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/raisin_bread.webp');"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-16 relative z-10 flex items-center justify-between gap-4 text-white">
           <div>
             <p class="font-mono text-xs text-yellow tracking-widest uppercase mb-1">03 — Teatime &amp; Treats</p>
             <h3 class="text-h3 font-display transition-colors group-hover:text-yellow">Sweet buns &amp; hot cross buns</h3>
           </div>
-          <span class="w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
+          <span class="shrink-0 w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
             <iconify-icon icon="ph:arrow-right-bold" class="text-xl"></iconify-icon>
           </span>
         </div>
@@ -483,13 +485,13 @@
 
       <!-- Row 4 -->
       <a href="convenience.html" class="group relative block w-full overflow-hidden last:border-0">
-        <div class="absolute inset-0 bg-cover transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/zephirins_factory_exterior_highres.png'); background-position: center 14%;"></div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-20 relative z-10 flex items-center justify-between text-white">
+        <div class="absolute inset-0 bg-cover transition-transform duration-700 ease-in-out group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(22, 18, 12, 0.75) 0%, rgba(22, 18, 12, 0.4) 100%), url('images/zephirins_factory_exterior_highres.webp'); background-position: center 14%;"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-20 relative z-10 flex items-center justify-between gap-4 text-white">
           <div>
             <p class="font-mono text-xs text-yellow tracking-widest uppercase mb-1">04 — Convenience Store</p>
             <h3 class="text-h3 font-display transition-colors group-hover:text-yellow">Zephirin's Convenience Store opens 7 days a week from 6:30a.m to 9:00p.m</h3>
           </div>
-          <span class="w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
+          <span class="shrink-0 w-12 h-12 rounded-full bg-white/10 group-hover:bg-orange text-white flex items-center justify-center transition-colors shadow-sm group-hover:translate-x-2 duration-300">
             <iconify-icon icon="ph:arrow-right-bold" class="text-xl"></iconify-icon>
           </span>
         </div>
@@ -513,7 +515,7 @@
         <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
           
           <!-- Card 1 -->
-          <div class="flip-card w-full h-[320px] [perspective:1000px] cursor-pointer" onclick="toggleFlip(this)">
+          <div class="flip-card w-full h-[320px] [perspective:1000px]">
             <div class="flip-card-inner relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]">
               <!-- Front -->
               <div class="flip-card-front absolute inset-0 w-full h-full [backface-visibility:hidden] bg-paper border border-ink/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
@@ -524,7 +526,7 @@
                     <p class="text-xs text-muted mt-2 font-mono uppercase tracking-wider">Est. 1923</p>
                   </div>
                 </div>
-                <span class="inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
+                <span class="flip-hint inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
               </div>
               <!-- Back -->
               <div class="flip-card-back absolute inset-0 w-full h-full [backface-visibility:hidden] bg-ink text-white rounded-3xl p-8 flex flex-col justify-between [transform:rotateY(180deg)] shadow-md">
@@ -538,7 +540,7 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="flip-card w-full h-[320px] [perspective:1000px] cursor-pointer" onclick="toggleFlip(this)">
+          <div class="flip-card w-full h-[320px] [perspective:1000px]">
             <div class="flip-card-inner relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]">
               <!-- Front -->
               <div class="flip-card-front absolute inset-0 w-full h-full [backface-visibility:hidden] bg-paper border border-ink/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
@@ -549,7 +551,7 @@
                     <p class="text-xs text-muted mt-2 font-mono uppercase tracking-wider">Supermarkets &amp; Retailers</p>
                   </div>
                 </div>
-                <span class="inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
+                <span class="flip-hint inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
               </div>
               <!-- Back -->
               <div class="flip-card-back absolute inset-0 w-full h-full [backface-visibility:hidden] bg-ink text-white rounded-3xl p-8 flex flex-col justify-between [transform:rotateY(180deg)] shadow-md">
@@ -563,7 +565,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="flip-card w-full h-[320px] [perspective:1000px] cursor-pointer" onclick="toggleFlip(this)">
+          <div class="flip-card w-full h-[320px] [perspective:1000px]">
             <div class="flip-card-inner relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]">
               <!-- Front -->
               <div class="flip-card-front absolute inset-0 w-full h-full [backface-visibility:hidden] bg-paper border border-ink/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
@@ -574,7 +576,7 @@
                     <p class="text-xs text-muted mt-2 font-mono uppercase tracking-wider">Daily Essentials</p>
                   </div>
                 </div>
-                <span class="inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
+                <span class="flip-hint inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
               </div>
               <!-- Back -->
               <div class="flip-card-back absolute inset-0 w-full h-full [backface-visibility:hidden] bg-ink text-white rounded-3xl p-8 flex flex-col justify-between [transform:rotateY(180deg)] shadow-md">
@@ -588,7 +590,7 @@
           </div>
 
           <!-- Card 4 -->
-          <div class="flip-card w-full h-[320px] [perspective:1000px] cursor-pointer" onclick="toggleFlip(this)">
+          <div class="flip-card w-full h-[320px] [perspective:1000px]">
             <div class="flip-card-inner relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]">
               <!-- Front -->
               <div class="flip-card-front absolute inset-0 w-full h-full [backface-visibility:hidden] bg-paper border border-ink/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
@@ -599,7 +601,7 @@
                     <p class="text-xs text-muted mt-2 font-mono uppercase tracking-wider">Bake with Zephirin's</p>
                   </div>
                 </div>
-                <span class="inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
+                <span class="flip-hint inline-flex items-center gap-2 text-sm font-semibold text-orange">Flip for info <iconify-icon icon="ph:arrow-right-bold" class="text-xs"></iconify-icon></span>
               </div>
               <!-- Back -->
               <div class="flip-card-back absolute inset-0 w-full h-full [backface-visibility:hidden] bg-ink text-white rounded-3xl p-8 flex flex-col justify-between [transform:rotateY(180deg)] shadow-md">
@@ -619,12 +621,12 @@
     <!-- ============ 8. VOICES OF DELIGHT (Testimonial Carousel/Grid) ============ -->
     <section class="relative overflow-hidden py-24 lg:py-32 bg-paper">
       <!-- Left Side Faint Sketch of Bread -->
-      <div class="absolute left-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
-        <img src="images/sketch_bread_left.png" alt="" class="w-full h-auto" />
+      <div aria-hidden="true" class="hidden md:block absolute left-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
+        <img width="1024" height="1024" srcset="images/sketch_bread_left-600.webp 600w, images/sketch_bread_left.webp 1024w" sizes="(max-width: 768px) 100vw, 50vw" loading="lazy" decoding="async" src="images/sketch_bread_left.webp" alt="" class="w-full h-auto" />
       </div>
       <!-- Right Side Faint Sketch of Pretzel -->
-      <div class="absolute right-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
-        <img src="images/sketch_pretzel_right.png" alt="" class="w-full h-auto" />
+      <div aria-hidden="true" class="hidden md:block absolute right-[-80px] top-1/2 -translate-y-1/2 w-64 md:w-80 pointer-events-none mix-blend-multiply select-none z-0" style="opacity: 0.75;">
+        <img width="1024" height="1024" srcset="images/sketch_pretzel_right-600.webp 600w, images/sketch_pretzel_right.webp 1024w" sizes="(max-width: 768px) 100vw, 50vw" loading="lazy" decoding="async" src="images/sketch_pretzel_right.webp" alt="" class="w-full h-auto" />
       </div>
       <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
         <div class="max-w-2xl mb-16">
@@ -632,7 +634,7 @@
           <h2 class="text-h2">Echoes of <span class="italic font-light text-orange">excellence</span>: customer experiences</h2>
         </div>
         
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="testimonials grid md:grid-cols-3 gap-8">
           <!-- Quote 1 -->
           <figure class="bg-paper border border-ink/10 rounded-3xl p-8 card-hover flex flex-col justify-between">
             <div>
@@ -709,27 +711,27 @@
 
 
     <!-- ============ 10. A CENTURY IN NUMBERS (Counters section) ============ -->
-    <section class="relative bg-ink text-white py-24 lg:py-36 overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(22, 18, 12, 0.8), rgba(22, 18, 12, 0.9)), url('images/packaged_breads_banner.png'); background-attachment: fixed;">
+    <section class="parallax-bg relative bg-ink text-white py-24 lg:py-36 overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(22, 18, 12, 0.8), rgba(22, 18, 12, 0.9)), url('images/packaged_breads_banner.webp'); background-attachment: fixed;">
       <div class="absolute -bottom-32 -left-24 w-80 h-80 rounded-full sunrise-dot opacity-20 blur-3xl"></div>
       <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
         <p class="eyebrow mb-3" style="color: var(--yellow);">A Century in Numbers</p>
         <h2 class="text-h2 max-w-xl mb-16">Built <span class="italic font-light text-yellow">morning</span> by morning, since 1923.</h2>
         
-        <div id="stats-section" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center sm:text-left">
+        <div id="stats-section" class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 sm:gap-12 text-center sm:text-left">
           <div>
-            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="103">0</p>
+            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="103">103</p>
             <p class="mt-3 text-white/60 font-mono text-xs tracking-widest uppercase">Years Baking<br/>For Barbados</p>
           </div>
           <div>
-            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="11">0</p>
+            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="11">11</p>
             <p class="mt-3 text-white/60 font-mono text-xs tracking-widest uppercase">Parishes<br/>Delivered Daily</p>
           </div>
           <div>
-            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="50">0</p>
+            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="50" data-suffix="+">50+</p>
             <p class="mt-3 text-white/60 font-mono text-xs tracking-widest uppercase">Products Baked<br/>Each Morning</p>
           </div>
           <div>
-            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="300">0</p>
+            <p class="counter font-display text-5xl lg:text-7xl font-black text-yellow" data-target="300" data-suffix="K">300K</p>
             <p class="mt-3 text-white/60 font-mono text-xs tracking-widest uppercase">Loaves Out The<br/>Door Each Month</p>
           </div>
         </div>
@@ -739,7 +741,7 @@
     <!-- ============ CONTACT FORM / PARTNERSHIP INQUIRY ============ -->
     <section id="contact-form-section" class="py-24 lg:py-32 bg-paper">
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
-        <div class="rounded-[2.5rem] bg-cream p-10 md:p-16 grid lg:grid-cols-2 gap-12 items-center relative overflow-hidden">
+        <div class="rounded-[2.5rem] bg-cream p-6 sm:p-10 md:p-16 grid lg:grid-cols-2 gap-12 items-center relative overflow-hidden">
           <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full sunrise-dot opacity-25 blur-2xl"></div>
           
           <div class="relative">
@@ -748,35 +750,35 @@
             <p class="text-lead mt-6 max-w-md">Stockists, canteens, hotels, or distributors — fill out the form or reach out directly. We will follow up within one business day.</p>
             
             <div class="mt-10 space-y-4 font-mono text-sm">
-              <div class="flex items-center gap-3">
+              <a href="tel:+12465381426" class="flex items-center gap-3 min-h-11 hover:text-orange transition-colors">
                 <iconify-icon icon="ph:phone-bold" class="text-orange text-lg"></iconify-icon>
                 <span>1-246-538-1426</span>
-              </div>
-              <div class="flex items-center gap-3">
+              </a>
+              <a href="mailto:Orders@zephirinsbakeries.com" class="flex items-center gap-3 min-h-11 hover:text-orange transition-colors break-all">
                 <iconify-icon icon="ph:envelope-simple-bold" class="text-orange text-lg"></iconify-icon>
-                <span>hello@zephirinsbakery.bb</span>
-              </div>
+                <span>Orders@zephirinsbakeries.com</span>
+              </a>
             </div>
           </div>
 
           <!-- Interactive Form with custom submit action -->
-          <div class="relative bg-paper p-8 rounded-3xl shadow-sm border border-ink/5 z-10">
+          <div class="relative bg-paper p-5 sm:p-8 rounded-3xl shadow-sm border border-ink/5 z-10">
             <form id="stockist-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
               <div>
                 <label for="name" class="block text-xs font-mono uppercase tracking-wider text-ink-2 mb-2">Your Name</label>
-                <input type="text" id="name" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="Enter your full name" />
+                <input type="text" id="name" autocomplete="name" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="Enter your full name" />
               </div>
               <div>
                 <label for="business" class="block text-xs font-mono uppercase tracking-wider text-ink-2 mb-2">Business Name</label>
-                <input type="text" id="business" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="Supermarket / Cafe / Canteen name" />
+                <input type="text" id="business" autocomplete="organization" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="Supermarket / Cafe / Canteen name" />
               </div>
               <div>
                 <label for="email" class="block text-xs font-mono uppercase tracking-wider text-ink-2 mb-2">Email Address</label>
-                <input type="email" id="email" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="name@business.com" />
+                <input type="email" id="email" autocomplete="email" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="name@business.com" />
               </div>
               <div>
                 <label for="phone" class="block text-xs font-mono uppercase tracking-wider text-ink-2 mb-2">Telephone Number</label>
-                <input type="tel" id="phone" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="e.g. +1 246-XXX-XXXX" />
+                <input type="tel" id="phone" autocomplete="tel" required class="w-full bg-cream rounded-xl px-4 py-3 text-sm text-ink outline-none border border-transparent focus:border-orange transition-all" placeholder="e.g. +1 246-XXX-XXXX" />
               </div>
               <div>
                 <label for="message" class="block text-xs font-mono uppercase tracking-wider text-ink-2 mb-2">Inquiry / Message</label>
@@ -804,11 +806,11 @@
     <!-- ============ 11. EARTHY FOOTER ============ -->
     <footer class="bg-ink text-white border-t border-white/5">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-20 pb-10">
-        <div class="grid md:grid-cols-12 gap-12">
+        <div class="grid grid-cols-2 md:grid-cols-12 gap-x-6 gap-y-12 md:gap-12">
           
-          <div class="md:col-span-5">
+          <div class="col-span-2 md:col-span-5">
             <a href="#" class="flex items-center mb-6">
-              <img src="images/zephirin-bakeries-logo-white-text.png" alt="Zephirin's Bakery" class="h-[94px] w-auto" />
+              <img width="476" height="240" loading="lazy" decoding="async" src="images/zephirin-bakeries-logo-white-text.webp" alt="Zephirin's Bakery" class="h-[94px] w-auto" />
             </a>
             <p class="text-white/60 max-w-xs leading-relaxed text-[15px]">
               Barbados' bakery since 1923 — fresh bread baked before sunrise and delivered to every parish on the island.
@@ -840,10 +842,10 @@
             </ul>
           </div>
 
-          <div class="md:col-span-3">
+          <div class="col-span-2 md:col-span-3">
             <p class="eyebrow mb-5" style="color: var(--yellow);">Headquarters</p>
             <p class="text-white/60 leading-relaxed font-mono text-sm mb-4">
-              Tudor Bridge<br/>Bridgetown, Saint Michael<br/>Barbados
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Zephirin%27s+Bakeries,+Tudor+Bridge,+Bridgetown,+Barbados" target="_blank" rel="noopener" class="hover:text-white transition-colors">Tudor Bridge<br/>Bridgetown, Saint Michael<br/>Barbados</a>
             </p>
             <div class="w-full h-32 border border-white/10 rounded-xl overflow-hidden opacity-85 hover:opacity-100 transition-opacity">
               <iframe 
@@ -907,6 +909,17 @@
             dot.classList.remove('active-dot');
           }
         });
+
+        // The hero video only downloads and plays while its slide is showing
+        slides.forEach((slide, index) => {
+          const video = slide.querySelector('video');
+          if (!video) return;
+          if (index === currentSlide) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
       }
 
       function nextSlide() {
@@ -924,11 +937,14 @@
         updateSlider();
       }
 
-      // Auto play hero slider
-      let slideInterval = setInterval(nextSlide, 7000);
-      
+      const allowMotion = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+
+      // Auto play hero slider (skipped when the visitor has asked for reduced motion)
+      let slideInterval = allowMotion ? setInterval(nextSlide, 7000) : null;
+
       // Pause autoplay on button clicks
       function resetInterval() {
+        if (!allowMotion) return;
         clearInterval(slideInterval);
         slideInterval = setInterval(nextSlide, 7000);
       }
@@ -936,51 +952,46 @@
         btn.addEventListener('click', resetInterval);
       });
 
-      // Flip box toggle for mobile/touch
-      function toggleFlip(card) {
-        // Only trigger on mobile screens where hover does not exist
-        if (window.innerWidth < 1024) {
-          card.classList.toggle('flipped');
+      // Swipe left/right on the hero to change slides
+      const hero = document.getElementById('hero');
+      let touchStartX = 0, touchStartY = 0;
+      hero.addEventListener('touchstart', e => {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+      }, { passive: true });
+      hero.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        const dy = e.changedTouches[0].clientY - touchStartY;
+        if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+          dx < 0 ? nextSlide() : prevSlide();
+          resetInterval();
         }
+      }, { passive: true });
+
+      // Stats counters: the real numbers are already in the HTML, so a slow or failed
+      // script still shows them. With motion allowed, count up once they scroll into view.
+      function animateCounter(counter) {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const suffix = counter.getAttribute('data-suffix') || '';
+        const duration = 2000;
+        const start = performance.now();
+        function frame(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          counter.textContent = Math.floor(target * progress) + suffix;
+          if (progress < 1) requestAnimationFrame(frame);
+        }
+        requestAnimationFrame(frame);
       }
 
-      // Stats section counter animations
-      let countersAnimated = false;
       const statsSection = document.getElementById('stats-section');
-
-      function animateCounters() {
-        const counters = document.querySelectorAll('.counter');
-        counters.forEach(counter => {
-          const target = parseInt(counter.getAttribute('data-target'));
-          let current = 0;
-          const duration = 2000; // 2 seconds
-          const steps = 60;
-          const increment = target / steps;
-          const intervalTime = duration / steps;
-          
-          const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-              counter.innerText = target + (target === 50 ? "+" : (target === 300 ? "K" : ""));
-              clearInterval(timer);
-            } else {
-              counter.innerText = Math.floor(current) + (target === 300 ? "K" : "");
-            }
-          }, intervalTime);
-        });
+      if (allowMotion && statsSection && 'IntersectionObserver' in window) {
+        const statsObserver = new IntersectionObserver(entries => {
+          if (!entries[0].isIntersecting) return;
+          statsObserver.disconnect();
+          statsSection.querySelectorAll('.counter').forEach(animateCounter);
+        }, { threshold: 0.3 });
+        statsObserver.observe(statsSection);
       }
-
-      // Trigger animations on scroll
-      window.addEventListener('scroll', function() {
-        if (!countersAnimated && statsSection) {
-          const rect = statsSection.getBoundingClientRect();
-          const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-          if (!(rect.bottom < 0 || rect.top - viewHeight >= 0)) {
-            countersAnimated = true;
-            animateCounters();
-          }
-        }
-      });
 
       // Contact form submission
       function handleFormSubmit(e) {
@@ -1035,7 +1046,7 @@
       <div>
         <div class="flex items-center justify-between mb-8 pb-6 border-b border-white/10">
           <a href="index.html" class="flex items-center">
-            <img src="images/zephirin-bakeries-logo-white-text.png" alt="Zephirin's Bakery" class="h-10 w-auto" />
+            <img width="476" height="240" loading="lazy" decoding="async" src="images/zephirin-bakeries-logo-white-text.webp" alt="Zephirin's Bakery" class="h-10 w-auto" />
           </a>
           <button onclick="toggleMobileNav()" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 text-white transition-colors cursor-pointer" aria-label="Close menu">
             <iconify-icon icon="ph:x-bold" class="text-xl"></iconify-icon>
@@ -1045,13 +1056,16 @@
         <!-- Navigation Links (Mobile Only) -->
         <nav class="flex flex-col gap-5 text-lg font-bold uppercase tracking-wider font-display lg:hidden mb-8">
           <a href="index.html" class="text-orange">Home</a>
-          <div class="space-y-2">
-            <span class="text-white/40 text-xs font-mono tracking-widest block uppercase">Products</span>
-            <div class="pl-4 flex flex-col gap-3 border-l border-white/10">
+          <details class="nav-accordion">
+            <summary class="flex items-center justify-between hover:text-yellow transition-colors">
+              Products
+              <iconify-icon icon="ph:caret-down-bold" class="nav-accordion-caret text-base transition-transform duration-200" aria-hidden="true"></iconify-icon>
+            </summary>
+            <div class="mt-4 pl-4 flex flex-col gap-3 border-l border-white/10">
               <a href="bakery.html" class="text-white hover:text-yellow transition-colors text-base">Bakery</a>
               <a href="convenience.html" class="text-white hover:text-yellow transition-colors text-base font-semibold">Convenience Store</a>
             </div>
-          </div>
+          </details>
           <a href="recipes.html" class="hover:text-yellow transition-colors">Recipes</a>
           <a href="locator.html" class="hover:text-yellow transition-colors">Find Us</a>
           <a href="about.html" class="hover:text-yellow transition-colors">Heritage & Community</a>
@@ -1085,8 +1099,7 @@
             <iconify-icon icon="ph:map-pin-bold" class="text-yellow text-lg mt-0.5"></iconify-icon>
             <div>
               <p class="font-bold text-white">Address</p>
-              <p class="mt-0.5">Tudor Bridge, Bridgetown</p>
-              <p>Saint Michael, Barbados</p>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Zephirin%27s+Bakeries,+Tudor+Bridge,+Bridgetown,+Barbados" target="_blank" rel="noopener" class="block mt-0.5 hover:text-white transition-colors">Tudor Bridge, Bridgetown<br/>Saint Michael, Barbados</a>
             </div>
           </div>
           
@@ -1100,8 +1113,8 @@
           Stock Zephirin's
         </a>
         <div class="space-y-2 text-xs text-white/50 font-mono">
-          <p>P: 1-246-538-1426</p>
-          <p>E: hello@zephirinsbakery.bb</p>
+          <p><a href="tel:+12465381426" class="hover:text-white transition-colors">P: 1-246-538-1426</a></p>
+          <p><a href="mailto:Orders@zephirinsbakeries.com" class="hover:text-white transition-colors">E: Orders@zephirinsbakeries.com</a></p>
         </div>
       </div>
     </div>
@@ -1109,8 +1122,15 @@
     <!-- Backdrop for drawer -->
     <div id="mobile-nav-backdrop" class="fixed inset-0 z-40 bg-ink/50 opacity-0 pointer-events-none transition-opacity duration-300" onclick="toggleMobileNav()"></div>
 
+    <!-- ============ MOBILE ACTION BAR (phones only, see css/mobile.css) ============ -->
+    <nav class="mobile-action-bar" aria-label="Quick contact">
+      <a href="tel:+12465381426"><iconify-icon icon="ph:phone-call-bold" aria-hidden="true"></iconify-icon><span>Call</span></a>
+      <a href="https://wa.me/12465381426" target="_blank" rel="noopener"><iconify-icon icon="ph:whatsapp-logo-bold" class="wa-icon" aria-hidden="true"></iconify-icon><span>WhatsApp</span></a>
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Zephirin%27s+Bakeries,+Tudor+Bridge,+Bridgetown,+Barbados" target="_blank" rel="noopener"><iconify-icon icon="ph:navigation-arrow-bold" aria-hidden="true"></iconify-icon><span>Directions</span></a>
+    </nav>
+
     <!-- ============ FLOATING STORE INFO WIDGET ============ -->
-    <div class="fixed bottom-6 right-6 z-40 font-mono">
+    <div class="store-info-widget fixed bottom-6 right-6 z-40 font-mono">
       <!-- Expanded Card (Hidden by default, toggled via JS) -->
       <div id="store-info-card" class="hidden absolute bottom-16 right-0 w-80 bg-ink text-white rounded-3xl p-6 shadow-2xl border border-white/10 transition-all duration-300 opacity-0 scale-95 origin-bottom-right">
         <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
@@ -1137,7 +1157,7 @@
 
         <!-- Call & WhatsApp Actions -->
         <div class="space-y-2">
-          <a href="tel:12465381426" class="flex items-center justify-center gap-2 bg-orange hover:bg-orange-deep text-white rounded-full py-3 text-xs font-bold uppercase tracking-wider transition-colors duration-200">
+          <a href="tel:+12465381426" class="flex items-center justify-center gap-2 bg-orange hover:bg-orange-deep text-white rounded-full py-3 text-xs font-bold uppercase tracking-wider transition-colors duration-200">
             <iconify-icon icon="ph:phone-call-bold" class="text-sm"></iconify-icon>
             Call: 1-246-538-1426
           </a>

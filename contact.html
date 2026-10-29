@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Stock Zephirin's | Wholesale &amp; Retail Partnerships in Barbados</title>
     <meta name="description" content="Supermarkets, shops, hotels and restaurants: partner with Zephirin's Bakery for daily wholesale bread deliveries across Barbados." />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -24,6 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <style type="text/tailwindcss">
@@ -86,19 +87,19 @@
     </style>
   </head>
   <body class="antialiased selection:bg-orange/20 selection:text-orange-deep">    <!-- ============ TOP STRIP ============ -->
-    <div class="bg-ink text-yellow text-xs border-b border-white/5">
+    <div class="top-strip bg-ink text-yellow text-xs border-b border-white/5">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 h-11 flex items-center justify-between font-mono tracking-wider">
         <div class="flex items-center gap-3 sm:gap-4 mx-auto sm:mx-0">
           <!-- Phone link: icon only on mobile, text on desktop -->
-          <a href="tel:12465381426" class="hover:text-white transition-colors flex items-center gap-1">
+          <a href="tel:+12465381426" class="hover:text-white transition-colors flex items-center gap-1">
             <iconify-icon icon="ph:phone-fill" class="text-sm sm:hidden"></iconify-icon>
             <span class="sm:hidden">1-246-538-1426</span><span class="hidden sm:inline">P: 1-246-538-1426</span>
           </a>
           <span class="text-white/20">•</span>
           <!-- Email link: icon only on mobile, text on desktop -->
-          <a href="mailto:hello@zephirinsbakery.bb" class="hover:text-white transition-colors flex items-center gap-1">
+          <a href="mailto:Orders@zephirinsbakeries.com" class="hover:text-white transition-colors flex items-center gap-1">
             <iconify-icon icon="ph:envelope-simple-fill" class="text-sm sm:hidden"></iconify-icon>
-            <span class="hidden sm:inline">E: hello@zephirinsbakery.bb</span>
+            <span class="hidden sm:inline">E: Orders@zephirinsbakeries.com</span>
           </a>
         </div>
         <div class="hidden sm:flex items-center gap-4 text-base">
@@ -111,18 +112,25 @@
 
     <!-- ============ 2. STICKY HEADER ============ -->
     <header id="site-header" class="sticky top-0 z-50 bg-paper/95 backdrop-blur-md border-b border-ink/10 transition-all duration-300">
-      <!-- Top Row: Centered Logo -->
-      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex justify-center border-b border-ink/5">
+      <!-- Top Row: Centered Logo (Desktop only) -->
+      <div class="hidden lg:flex max-w-7xl mx-auto px-6 lg:px-10 py-5 justify-center border-b border-ink/5">
         <a href="index.html" class="flex items-center">
-          <img src="images/zephirin-bakeries-logo-transparent.png" alt="Zephirin's Bakery" class="h-[100px] w-auto" />
+          <img width="476" height="240" src="images/zephirin-bakeries-logo-transparent.webp" alt="Zephirin's Bakery" class="h-[100px] w-auto" />
         </a>
       </div>
       <!-- Bottom Row: Navigation and Controls -->
-      <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 lg:h-16 flex items-center justify-between relative">
         <!-- Left: Hamburger List Icon (triggers Mobile/Sidebar Nav) -->
         <button onclick="toggleMobileNav()" class="flex items-center justify-center w-10 h-10 -ml-2 text-ink hover:text-orange transition-colors cursor-pointer" aria-label="Toggle Navigation">
           <iconify-icon icon="ph:list-bold" class="text-2xl"></iconify-icon>
         </button>
+
+        <!-- Mobile-only Centered Logo -->
+        <div class="lg:hidden flex items-center justify-center absolute left-1/2 -translate-x-1/2">
+          <a href="index.html">
+            <img width="476" height="240" src="images/zephirin-bakeries-logo-transparent.webp" alt="Zephirin's Bakery" class="h-14 w-auto" />
+          </a>
+        </div>
 
         <!-- Center: Centered Menu Links -->
         <nav class="hidden lg:flex items-center gap-8 text-[13px] font-bold uppercase tracking-wider text-ink-2">
@@ -147,8 +155,10 @@
         </nav>
 
         <!-- Right: Curved CTA Button -->
-        <a href="contact.html" class="bg-orange hover:bg-orange-deep text-white transition-all duration-200 rounded-full px-6 py-2.5 text-xs font-bold uppercase tracking-wider shadow-sm">
-          Stock Zephirin's
+        <a href="contact.html" aria-label="Stock Zephirin's" class="bg-orange hover:bg-orange-deep text-white transition-all duration-200 rounded-full w-10 h-10 sm:w-auto sm:h-auto flex items-center justify-center sm:px-6 sm:py-2.5 text-xs font-bold uppercase tracking-wider shadow-sm z-10">
+          <!-- Icon only on phones so it doesn't overlap the centred logo -->
+          <iconify-icon icon="ph:storefront-bold" class="text-lg sm:hidden"></iconify-icon>
+          <span class="hidden sm:inline">Stock Zephirin's</span>
         </a>
       </div>
     </header>
@@ -210,22 +220,22 @@
             <div class="grid md:grid-cols-2 gap-6">
               <div>
                 <label for="full-name" class="block font-mono text-[11px] font-bold text-ink uppercase tracking-wider mb-2">Full Name *</label>
-                <input type="text" id="full-name" required class="form-input w-full px-4 py-3 rounded-xl bg-paper text-sm" placeholder="e.g. John Lashley" />
+                <input type="text" id="full-name" autocomplete="name" required class="form-input w-full px-4 py-3 rounded-xl bg-paper text-sm" placeholder="e.g. John Lashley" />
               </div>
               <div>
                 <label for="company" class="block font-mono text-[11px] font-bold text-ink uppercase tracking-wider mb-2">Business / Store Name *</label>
-                <input type="text" id="company" required class="form-input w-full px-4 py-3 rounded-xl bg-paper text-sm" placeholder="e.g. Massy Stores" />
+                <input type="text" id="company" autocomplete="organization" required class="form-input w-full px-4 py-3 rounded-xl bg-paper text-sm" placeholder="e.g. Massy Stores" />
               </div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
               <div>
                 <label for="email" class="block font-mono text-[11px] font-bold text-ink uppercase tracking-wider mb-2">Email Address *</label>
-                <input type="email" id="email" required class="form-input w-full px-4 py-3 rounded-xl bg-paper text-sm" placeholder="e.g. john@massystores.com" />
+                <input type="email" id="email" autocomplete="email" required class="form-input w-full px-4 py-3 rounded-xl bg-paper text-sm" placeholder="e.g. john@massystores.com" />
               </div>
               <div>
                 <label for="phone" class="block font-mono text-[11px] font-bold text-ink uppercase tracking-wider mb-2">Phone Number *</label>
-                <input type="tel" id="phone" required class="form-input w-full px-4 py-3 rounded-xl bg-paper text-sm" placeholder="e.g. +1 246-417-5800" />
+                <input type="tel" id="phone" autocomplete="tel" required class="form-input w-full px-4 py-3 rounded-xl bg-paper text-sm" placeholder="e.g. +1 246-417-5800" />
               </div>
             </div>
 
@@ -293,10 +303,10 @@
       <!-- Floating Contact Details Overlay Bar -->
       <div class="absolute bottom-8 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl rounded-2xl overflow-hidden shadow-2xl border border-white/20">
         <!-- Background image with dark/warm texture -->
-        <div class="relative px-8 py-6 md:py-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 bg-cover bg-center" style="background-image: linear-gradient(to right, rgba(22,18,12,0.92), rgba(44,36,25,0.88)), url('images/ig_post_flatlay.png');">
+        <div class="relative px-8 py-6 md:py-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 bg-cover bg-center" style="background-image: linear-gradient(to right, rgba(22,18,12,0.92), rgba(44,36,25,0.88)), url('images/ig_post_flatlay.webp');">
           
           <!-- Column 1: Location -->
-          <div class="flex items-center gap-4 flex-1">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Zephirin%27s+Bakeries,+Tudor+Bridge,+Bridgetown,+Barbados" target="_blank" rel="noopener" class="flex items-center gap-4 flex-1 w-full md:w-auto">
             <span class="w-12 h-12 rounded-full bg-black flex items-center justify-center text-white text-xl shrink-0">
               <iconify-icon icon="ph:map-pin-fill"></iconify-icon>
             </span>
@@ -304,13 +314,13 @@
               <p class="font-bold text-sm text-white">Tudor Bridge, Bridgetown</p>
               <p class="text-xs text-white/70 mt-0.5">Saint Michael, Barbados</p>
             </div>
-          </div>
+          </a>
 
           <!-- Divider (hidden on mobile) -->
           <div class="hidden md:block w-px h-10 bg-white/10"></div>
 
           <!-- Column 2: Phone -->
-          <div class="flex items-center gap-4 flex-1">
+          <a href="tel:+12465381426" class="flex items-center gap-4 flex-1 w-full md:w-auto">
             <span class="w-12 h-12 rounded-full bg-black flex items-center justify-center text-white text-xl shrink-0">
               <iconify-icon icon="ph:phone-fill"></iconify-icon>
             </span>
@@ -318,21 +328,21 @@
               <p class="font-bold text-sm text-white">Reach out to us at</p>
               <p class="text-xs text-white/70 mt-0.5">1-246-538-1426</p>
             </div>
-          </div>
+          </a>
 
           <!-- Divider (hidden on mobile) -->
           <div class="hidden md:block w-px h-10 bg-white/10"></div>
 
           <!-- Column 3: Email -->
-          <div class="flex items-center gap-4 flex-1">
+          <a href="mailto:Orders@zephirinsbakeries.com" class="flex items-center gap-4 flex-1 w-full md:w-auto">
             <span class="w-12 h-12 rounded-full bg-black flex items-center justify-center text-white text-xl shrink-0">
               <iconify-icon icon="ph:envelope-simple-fill"></iconify-icon>
             </span>
             <div class="text-left">
               <p class="font-bold text-sm text-white">Wholesale Desk</p>
-              <p class="text-xs text-white/70 mt-0.5">hello@zephirinsbakery.bb</p>
+              <p class="text-xs text-white/70 mt-0.5">Orders@zephirinsbakeries.com</p>
             </div>
-          </div>
+          </a>
 
         </div>
       </div>
@@ -341,11 +351,11 @@
     <!-- ============ FOOTER ============ -->
     <footer class="bg-ink text-white border-t border-white/5">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-20 pb-10">
-        <div class="grid md:grid-cols-12 gap-12">
+        <div class="grid grid-cols-2 md:grid-cols-12 gap-x-6 gap-y-12 md:gap-12">
           
-          <div class="md:col-span-5">
+          <div class="col-span-2 md:col-span-5">
             <a href="#" class="flex items-center mb-6">
-              <img src="images/zephirin-bakeries-logo-white-text.png" alt="Zephirin's Bakery" class="h-[94px] w-auto" />
+              <img width="476" height="240" loading="lazy" decoding="async" src="images/zephirin-bakeries-logo-white-text.webp" alt="Zephirin's Bakery" class="h-[94px] w-auto" />
             </a>
             <p class="text-white/60 max-w-xs leading-relaxed text-[15px]">
               Barbados' bakery since 1923 — fresh bread baked before sunrise and delivered to every parish on the island.
@@ -377,10 +387,10 @@
             </ul>
           </div>
 
-          <div class="md:col-span-3">
+          <div class="col-span-2 md:col-span-3">
             <p class="eyebrow mb-5" style="color: var(--yellow);">Headquarters</p>
             <p class="text-white/60 leading-relaxed font-mono text-sm mb-4">
-              Tudor Bridge<br/>Bridgetown, Saint Michael<br/>Barbados
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Zephirin%27s+Bakeries,+Tudor+Bridge,+Bridgetown,+Barbados" target="_blank" rel="noopener" class="hover:text-white transition-colors">Tudor Bridge<br/>Bridgetown, Saint Michael<br/>Barbados</a>
             </p>
             <div class="w-full h-32 border border-white/10 rounded-xl overflow-hidden opacity-85 hover:opacity-100 transition-opacity">
               <iframe 
@@ -514,7 +524,7 @@
       <div>
         <div class="flex items-center justify-between mb-8 pb-6 border-b border-white/10">
           <a href="index.html" class="flex items-center">
-            <img src="images/zephirin-bakeries-logo-white-text.png" alt="Zephirin's Bakery" class="h-10 w-auto" />
+            <img width="476" height="240" loading="lazy" decoding="async" src="images/zephirin-bakeries-logo-white-text.webp" alt="Zephirin's Bakery" class="h-10 w-auto" />
           </a>
           <button onclick="toggleMobileNav()" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 text-white transition-colors cursor-pointer" aria-label="Close menu">
             <iconify-icon icon="ph:x-bold" class="text-xl"></iconify-icon>
@@ -524,13 +534,16 @@
         <!-- Navigation Links (Mobile Only) -->
         <nav class="flex flex-col gap-5 text-lg font-bold uppercase tracking-wider font-display lg:hidden mb-8">
           <a href="index.html" class="hover:text-yellow transition-colors">Home</a>
-          <div class="space-y-2">
-            <span class="text-white/40 text-xs font-mono tracking-widest block uppercase">Products</span>
-            <div class="pl-4 flex flex-col gap-3 border-l border-white/10">
+          <details class="nav-accordion">
+            <summary class="flex items-center justify-between hover:text-yellow transition-colors">
+              Products
+              <iconify-icon icon="ph:caret-down-bold" class="nav-accordion-caret text-base transition-transform duration-200" aria-hidden="true"></iconify-icon>
+            </summary>
+            <div class="mt-4 pl-4 flex flex-col gap-3 border-l border-white/10">
               <a href="bakery.html" class="text-white hover:text-yellow transition-colors text-base">Bakery</a>
               <a href="convenience.html" class="text-white hover:text-yellow transition-colors text-base font-semibold">Convenience Store</a>
             </div>
-          </div>
+          </details>
           <a href="recipes.html" class="hover:text-yellow transition-colors">Recipes</a>
           <a href="locator.html" class="hover:text-yellow transition-colors">Find Us</a>
           <a href="about.html" class="hover:text-yellow transition-colors">Heritage & Community</a>
@@ -564,8 +577,7 @@
             <iconify-icon icon="ph:map-pin-bold" class="text-yellow text-lg mt-0.5"></iconify-icon>
             <div>
               <p class="font-bold text-white">Address</p>
-              <p class="mt-0.5">Tudor Bridge, Bridgetown</p>
-              <p>Saint Michael, Barbados</p>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Zephirin%27s+Bakeries,+Tudor+Bridge,+Bridgetown,+Barbados" target="_blank" rel="noopener" class="block mt-0.5 hover:text-white transition-colors">Tudor Bridge, Bridgetown<br/>Saint Michael, Barbados</a>
             </div>
           </div>
           
@@ -579,8 +591,8 @@
           Stock Zephirin's
         </a>
         <div class="space-y-2 text-xs text-white/50 font-mono">
-          <p>P: 1-246-538-1426</p>
-          <p>E: hello@zephirinsbakery.bb</p>
+          <p><a href="tel:+12465381426" class="hover:text-white transition-colors">P: 1-246-538-1426</a></p>
+          <p><a href="mailto:Orders@zephirinsbakeries.com" class="hover:text-white transition-colors">E: Orders@zephirinsbakeries.com</a></p>
         </div>
       </div>
     </div>
@@ -588,8 +600,15 @@
     <!-- Backdrop for drawer -->
     <div id="mobile-nav-backdrop" class="fixed inset-0 z-40 bg-ink/50 opacity-0 pointer-events-none transition-opacity duration-300" onclick="toggleMobileNav()"></div>
 
+    <!-- ============ MOBILE ACTION BAR (phones only, see css/mobile.css) ============ -->
+    <nav class="mobile-action-bar" aria-label="Quick contact">
+      <a href="tel:+12465381426"><iconify-icon icon="ph:phone-call-bold" aria-hidden="true"></iconify-icon><span>Call</span></a>
+      <a href="https://wa.me/12465381426" target="_blank" rel="noopener"><iconify-icon icon="ph:whatsapp-logo-bold" class="wa-icon" aria-hidden="true"></iconify-icon><span>WhatsApp</span></a>
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Zephirin%27s+Bakeries,+Tudor+Bridge,+Bridgetown,+Barbados" target="_blank" rel="noopener"><iconify-icon icon="ph:navigation-arrow-bold" aria-hidden="true"></iconify-icon><span>Directions</span></a>
+    </nav>
+
     <!-- ============ FLOATING STORE INFO WIDGET ============ -->
-    <div class="fixed bottom-6 right-6 z-40 font-mono">
+    <div class="store-info-widget fixed bottom-6 right-6 z-40 font-mono">
       <!-- Expanded Card (Hidden by default, toggled via JS) -->
       <div id="store-info-card" class="hidden absolute bottom-16 right-0 w-80 bg-ink text-white rounded-3xl p-6 shadow-2xl border border-white/10 transition-all duration-300 opacity-0 scale-95 origin-bottom-right">
         <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
@@ -616,7 +635,7 @@
 
         <!-- Call & WhatsApp Actions -->
         <div class="space-y-2">
-          <a href="tel:12465381426" class="flex items-center justify-center gap-2 bg-orange hover:bg-orange-deep text-white rounded-full py-3 text-xs font-bold uppercase tracking-wider transition-colors duration-200">
+          <a href="tel:+12465381426" class="flex items-center justify-center gap-2 bg-orange hover:bg-orange-deep text-white rounded-full py-3 text-xs font-bold uppercase tracking-wider transition-colors duration-200">
             <iconify-icon icon="ph:phone-call-bold" class="text-sm"></iconify-icon>
             Call: 1-246-538-1426
           </a>
