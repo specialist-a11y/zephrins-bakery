@@ -102,7 +102,9 @@ body { overflow-x: clip; }
   #products-grid .product-item { padding: 0.25rem; }
   /* Loaves are tall and narrow on square photos with 20%+ white either side: use a taller frame
      and fill it, trimming 12.5% of white off each side. Placeholder shots keep object-contain. */
-  #products-grid .product-item .aspect-square { aspect-ratio: 3 / 4; padding: 0; }
+  /* A visible cream tile gives the photo an edge that lines up with the left-aligned text
+     (the photos' white backgrounds blend into it via mix-blend-multiply). */
+  #products-grid .product-item .aspect-square { aspect-ratio: 3 / 4; padding: 0; background: var(--cream); border-radius: 1rem; }
   #products-grid .product-item img[src*="images/products/"] {
     width: 100%; height: 100%; max-width: none; max-height: none; object-fit: cover;
   }
